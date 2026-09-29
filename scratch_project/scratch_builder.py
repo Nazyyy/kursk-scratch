@@ -548,4 +548,106 @@ class BlockBuilder:
         }
         return bid
 
+
+    def sensing_touching(self, sprite_name, parent=None):
+        menu_id = gen_id()
+        bid = gen_id()
+        self.blocks[menu_id] = {
+            "opcode": "sensing_touchingobjectmenu",
+            "next": None,
+            "parent": bid,
+            "inputs": {},
+            "fields": {
+                "TOUCHINGOBJECTMENU": [sprite_name, None]
+            },
+            "shadow": True,
+            "topLevel": False
+        }
+        self.blocks[bid] = {
+            "opcode": "sensing_touchingobject",
+            "next": None,
+            "parent": parent,
+            "inputs": {
+                "TOUCHINGOBJECTMENU": [1, menu_id]
+            },
+            "fields": {},
+            "shadow": False,
+            "topLevel": False
+        }
+        return bid
+
+    def op_random(self, low, high, parent=None):
+        bid = gen_id()
+        self.blocks[bid] = {
+            "opcode": "operator_random",
+            "next": None,
+            "parent": parent,
+            "inputs": {
+                "FROM": [1, [4, low]],
+                "TO": [1, [4, high]]
+            },
+            "fields": {},
+            "shadow": False,
+            "topLevel": False
+        }
+        return bid
+
+    def op_and(self, cond1_id, cond2_id, parent=None):
+        bid = gen_id()
+        self.blocks[bid] = {
+            "opcode": "operator_and",
+            "next": None,
+            "parent": parent,
+            "inputs": {
+                "OPERAND1": [2, cond1_id],
+                "OPERAND2": [2, cond2_id]
+            },
+            "fields": {},
+            "shadow": False,
+            "topLevel": False
+        }
+        return bid
+
+    def goto_mouse(self, next_block=None, parent=None):
+        menu_id = gen_id()
+        bid = gen_id()
+        self.blocks[menu_id] = {
+            "opcode": "motion_goto_menu",
+            "next": None,
+            "parent": bid,
+            "inputs": {},
+            "fields": {
+                "TO": ["_mouse_", None]
+            },
+            "shadow": True,
+            "topLevel": False
+        }
+        self.blocks[bid] = {
+            "opcode": "motion_goto",
+            "next": next_block,
+            "parent": parent,
+            "inputs": {
+                "TO": [1, menu_id]
+            },
+            "fields": {},
+            "shadow": False,
+            "topLevel": False
+        }
+        if next_block and next_block in self.blocks:
+            self.blocks[next_block]["parent"] = bid
+        return bid
+
+    def sensing_mousedown(self, parent=None):
+        bid = gen_id()
+        self.blocks[bid] = {
+            "opcode": "sensing_mousedown",
+            "next": None,
+            "parent": parent,
+            "inputs": {},
+            "fields": {},
+            "shadow": False,
+            "topLevel": False
+        }
+        return bid
+
 print("BlockBuilder fully operational!")
