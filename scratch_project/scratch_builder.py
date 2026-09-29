@@ -506,8 +506,46 @@ class BlockBuilder:
             "shadow": False,
             "topLevel": False
         }
+    def stop_other_scripts(self, next_block=None, parent=None):
+        bid = gen_id()
+        self.blocks[bid] = {
+            "opcode": "control_stop",
+            "next": next_block,
+            "parent": parent,
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": ["other scripts in sprite", None]
+            },
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "true"
+            },
+            "shadow": False,
+            "topLevel": False
+        }
         if next_block and next_block in self.blocks:
             self.blocks[next_block]["parent"] = bid
+        return bid
+
+    def stop_this_script(self, parent=None):
+        bid = gen_id()
+        self.blocks[bid] = {
+            "opcode": "control_stop",
+            "next": None,
+            "parent": parent,
+            "inputs": {},
+            "fields": {
+                "STOP_OPTION": ["this script", None]
+            },
+            "mutation": {
+                "tagName": "mutation",
+                "children": [],
+                "hasnext": "false"
+            },
+            "shadow": False,
+            "topLevel": False
+        }
         return bid
 
 print("BlockBuilder fully operational!")

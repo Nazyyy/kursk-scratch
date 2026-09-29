@@ -1,416 +1,594 @@
 {
+  "btn_start": {
+    "assetId": "0ef6007e5e4627c95204c524a6623f17",
+    "name": "btn_start",
+    "md5ext": "0ef6007e5e4627c95204c524a6623f17.png",
+    "dataFormat": "png",
+    "size": 9597,
+    "rotationCenterX": 96,
+    "rotationCenterY": 21,
+    "bitmapResolution": 2
+  },
+  "btn_rules": {
+    "assetId": "61cf332e351aa58a319c7929203b1ac0",
+    "name": "btn_rules",
+    "md5ext": "61cf332e351aa58a319c7929203b1ac0.png",
+    "dataFormat": "png",
+    "size": 8181,
+    "rotationCenterX": 72,
+    "rotationCenterY": 17,
+    "bitmapResolution": 2
+  },
+  "btn_authors": {
+    "assetId": "a9395cf8090ace256774d5a156c15498",
+    "name": "btn_authors",
+    "md5ext": "a9395cf8090ace256774d5a156c15498.png",
+    "dataFormat": "png",
+    "size": 7780,
+    "rotationCenterX": 72,
+    "rotationCenterY": 17,
+    "bitmapResolution": 2
+  },
+  "btn_lock_focus": {
+    "assetId": "7c9ccc9b91d542abcc10e4f5fe2f1f6a",
+    "name": "btn_lock_focus",
+    "md5ext": "7c9ccc9b91d542abcc10e4f5fe2f1f6a.png",
+    "dataFormat": "png",
+    "size": 10897,
+    "rotationCenterX": 92,
+    "rotationCenterY": 19,
+    "bitmapResolution": 2
+  },
+  "btn_brake": {
+    "assetId": "2ed9a80749b9c0d1685a72cd9c8a8398",
+    "name": "btn_brake",
+    "md5ext": "2ed9a80749b9c0d1685a72cd9c8a8398.png",
+    "dataFormat": "png",
+    "size": 7623,
+    "rotationCenterX": 72,
+    "rotationCenterY": 19,
+    "bitmapResolution": 2
+  },
+  "btn_gear": {
+    "assetId": "648da1a50c99142efb9c274c91355771",
+    "name": "btn_gear",
+    "md5ext": "648da1a50c99142efb9c274c91355771.png",
+    "dataFormat": "png",
+    "size": 9565,
+    "rotationCenterX": 76,
+    "rotationCenterY": 19,
+    "bitmapResolution": 2
+  },
+  "btn_drill": {
+    "assetId": "fd8d383eb0cf21cb498f8bfa8b440260",
+    "name": "btn_drill",
+    "md5ext": "fd8d383eb0cf21cb498f8bfa8b440260.png",
+    "dataFormat": "png",
+    "size": 7819,
+    "rotationCenterX": 84,
+    "rotationCenterY": 19,
+    "bitmapResolution": 2
+  },
+  "btn_opt_a": {
+    "assetId": "ac049b38ccd0ddaabbf8222d5a1b197f",
+    "name": "btn_opt_a",
+    "md5ext": "ac049b38ccd0ddaabbf8222d5a1b197f.png",
+    "dataFormat": "png",
+    "size": 9766,
+    "rotationCenterX": 112,
+    "rotationCenterY": 17,
+    "bitmapResolution": 2
+  },
+  "btn_opt_b": {
+    "assetId": "355d69da1ec97d5d60b8e9a3bc424ffc",
+    "name": "btn_opt_b",
+    "md5ext": "355d69da1ec97d5d60b8e9a3bc424ffc.png",
+    "dataFormat": "png",
+    "size": 9210,
+    "rotationCenterX": 112,
+    "rotationCenterY": 17,
+    "bitmapResolution": 2
+  },
+  "btn_opt_c": {
+    "assetId": "3999c9b784d72195f3132b75e69d6441",
+    "name": "btn_opt_c",
+    "md5ext": "3999c9b784d72195f3132b75e69d6441.png",
+    "dataFormat": "png",
+    "size": 11615,
+    "rotationCenterX": 112,
+    "rotationCenterY": 17,
+    "bitmapResolution": 2
+  },
+  "hud_bar": {
+    "assetId": "f0bb9046949046bfd0cac42cc4f78df3",
+    "name": "hud_bar",
+    "md5ext": "f0bb9046949046bfd0cac42cc4f78df3.png",
+    "dataFormat": "png",
+    "size": 15088,
+    "rotationCenterX": 184,
+    "rotationCenterY": 14,
+    "bitmapResolution": 2
+  },
+  "dialog_plate": {
+    "assetId": "0cf250a3e8103e6e7058f90dd0fd6ea1",
+    "name": "dialog_plate",
+    "md5ext": "0cf250a3e8103e6e7058f90dd0fd6ea1.png",
+    "dataFormat": "png",
+    "size": 21029,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "char_semenov": {
+    "assetId": "1062948d66f7837c0dca95a23283e964",
+    "name": "char_semenov",
+    "md5ext": "1062948d66f7837c0dca95a23283e964.png",
+    "dataFormat": "png",
+    "size": 61917,
+    "rotationCenterX": 79,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "char_ufimtsev": {
+    "assetId": "cb5b3b5c78a1619d027465987a5bcb4d",
+    "name": "char_ufimtsev",
+    "md5ext": "cb5b3b5c78a1619d027465987a5bcb4d.png",
+    "dataFormat": "png",
+    "size": 75566,
+    "rotationCenterX": 78,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "char_lazarev": {
+    "assetId": "577b4a1939881a2b4f56a74575d17db0",
+    "name": "char_lazarev",
+    "md5ext": "577b4a1939881a2b4f56a74575d17db0.png",
+    "dataFormat": "png",
+    "size": 53076,
+    "rotationCenterX": 55,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "hero_copt": {
+    "assetId": "c0ae312197ded81afad2a6445a33835b",
+    "name": "hero_copt",
+    "md5ext": "c0ae312197ded81afad2a6445a33835b.png",
+    "dataFormat": "png",
+    "size": 68896,
+    "rotationCenterX": 76,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "kursik_drone": {
+    "assetId": "f23894fe8c39b9e890a16ce163692b44",
+    "name": "kursik_drone",
+    "md5ext": "f23894fe8c39b9e890a16ce163692b44.png",
+    "dataFormat": "png",
+    "size": 53006,
+    "rotationCenterX": 81,
+    "rotationCenterY": 90,
+    "bitmapResolution": 1
+  },
+  "bg_title": {
+    "assetId": "ea2900fe91eae2045a8e0529353de5e0",
+    "name": "bg_title",
+    "md5ext": "ea2900fe91eae2045a8e0529353de5e0.png",
+    "dataFormat": "png",
+    "size": 310550,
+    "rotationCenterX": 240,
+    "rotationCenterY": 180,
+    "bitmapResolution": 1
+  },
+  "bg_semenov": {
+    "assetId": "a588487fc4354c246d10aa762b3465df",
+    "name": "bg_semenov",
+    "md5ext": "a588487fc4354c246d10aa762b3465df.png",
+    "dataFormat": "png",
+    "size": 325838,
+    "rotationCenterX": 240,
+    "rotationCenterY": 180,
+    "bitmapResolution": 1
+  },
+  "bg_ufimtsev": {
+    "assetId": "7ef803acbef641d6dc16980c281f2837",
+    "name": "bg_ufimtsev",
+    "md5ext": "7ef803acbef641d6dc16980c281f2837.png",
+    "dataFormat": "png",
+    "size": 337209,
+    "rotationCenterX": 240,
+    "rotationCenterY": 180,
+    "bitmapResolution": 1
+  },
+  "bg_kma_aes": {
+    "assetId": "29e77a194aba16adb271856a9363c436",
+    "name": "bg_kma_aes",
+    "md5ext": "29e77a194aba16adb271856a9363c436.png",
+    "dataFormat": "png",
+    "size": 305800,
+    "rotationCenterX": 240,
+    "rotationCenterY": 180,
+    "bitmapResolution": 1
+  },
+  "bg_hall_of_fame": {
+    "assetId": "dd1c31a025a8eac787e596f8ee76717b",
+    "name": "bg_hall_of_fame",
+    "md5ext": "dd1c31a025a8eac787e596f8ee76717b.png",
+    "dataFormat": "png",
+    "size": 353145,
+    "rotationCenterX": 240,
+    "rotationCenterY": 180,
+    "bitmapResolution": 1
+  },
+  "fx_medal": {
+    "assetId": "b79dde49ea6a9a8bdfd0137acfb76893",
+    "name": "fx_medal",
+    "md5ext": "b79dde49ea6a9a8bdfd0137acfb76893.png",
+    "dataFormat": "png",
+    "size": 99729,
+    "rotationCenterX": 45,
+    "rotationCenterY": 72,
+    "bitmapResolution": 2
+  },
+  "flywheel_meter": {
+    "assetId": "2c413af71da5239a965cc5d47f12fba8",
+    "name": "flywheel_meter",
+    "md5ext": "2c413af71da5239a965cc5d47f12fba8.png",
+    "dataFormat": "png",
+    "size": 17260,
+    "rotationCenterX": 52,
+    "rotationCenterY": 52,
+    "bitmapResolution": 2
+  },
+  "telescope_lens": {
+    "assetId": "13b234a39095387cda1b13494eef6e5b",
+    "name": "telescope_lens",
+    "md5ext": "13b234a39095387cda1b13494eef6e5b.png",
+    "dataFormat": "png",
+    "size": 14578,
+    "rotationCenterX": 56,
+    "rotationCenterY": 56,
+    "bitmapResolution": 2
+  },
+  "eclipse_target": {
+    "assetId": "6d4211f611e783b997547835747c2eb2",
+    "name": "eclipse_target",
+    "md5ext": "6d4211f611e783b997547835747c2eb2.png",
+    "dataFormat": "png",
+    "size": 1981,
+    "rotationCenterX": 30,
+    "rotationCenterY": 30,
+    "bitmapResolution": 2
+  },
+  "telescope_lens_sharp": {
+    "assetId": "73efee26c4b1a4bff1054260898dc90b",
+    "name": "telescope_lens_sharp",
+    "md5ext": "73efee26c4b1a4bff1054260898dc90b.png",
+    "dataFormat": "png",
+    "size": 22316,
+    "rotationCenterX": 56,
+    "rotationCenterY": 56,
+    "bitmapResolution": 2
+  },
+  "wind_rotor": {
+    "assetId": "6caf17287beaf4ca704efa3a8e15e7a3",
+    "name": "wind_rotor",
+    "md5ext": "6caf17287beaf4ca704efa3a8e15e7a3.png",
+    "dataFormat": "png",
+    "size": 1168,
+    "rotationCenterX": 35,
+    "rotationCenterY": 35,
+    "bitmapResolution": 2
+  },
+  "magneto_sensor": {
+    "assetId": "273c1aadd7a75ce408d50fa210ff2d49",
+    "name": "magneto_sensor",
+    "md5ext": "273c1aadd7a75ce408d50fa210ff2d49.png",
+    "dataFormat": "png",
+    "size": 6351,
+    "rotationCenterX": 44,
+    "rotationCenterY": 25,
+    "bitmapResolution": 2
+  },
+  "ore_vein": {
+    "assetId": "23e7ca15b379a3518adbf3ee68819481",
+    "name": "ore_vein",
+    "md5ext": "23e7ca15b379a3518adbf3ee68819481.png",
+    "dataFormat": "png",
+    "size": 7696,
+    "rotationCenterX": 56,
+    "rotationCenterY": 20,
+    "bitmapResolution": 2
+  },
+  "fx_spark": {
+    "assetId": "2157dd058a2d4a3c2907b83d0b6ca61d",
+    "name": "fx_spark",
+    "md5ext": "2157dd058a2d4a3c2907b83d0b6ca61d.png",
+    "dataFormat": "png",
+    "size": 266,
+    "rotationCenterX": 20,
+    "rotationCenterY": 20,
+    "bitmapResolution": 1
+  },
+  "hero_astronomer": {
+    "assetId": "e0fb48127eaa88432ba39b3ce5e336d6",
+    "name": "hero_astronomer",
+    "md5ext": "e0fb48127eaa88432ba39b3ce5e336d6.png",
+    "dataFormat": "png",
+    "size": 68603,
+    "rotationCenterX": 76,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "hero_aviator": {
+    "assetId": "29bc5c316b86a5356acf3eebeeffba79",
+    "name": "hero_aviator",
+    "md5ext": "29bc5c316b86a5356acf3eebeeffba79.png",
+    "dataFormat": "png",
+    "size": 68125,
+    "rotationCenterX": 76,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "hero_physicist": {
+    "assetId": "eecbe5162e0e45c23a7affddfba93dbd",
+    "name": "hero_physicist",
+    "md5ext": "eecbe5162e0e45c23a7affddfba93dbd.png",
+    "dataFormat": "png",
+    "size": 67906,
+    "rotationCenterX": 76,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "hero_triumph": {
+    "assetId": "6154e232f99f68d4884dff07da6d0dc5",
+    "name": "hero_triumph",
+    "md5ext": "6154e232f99f68d4884dff07da6d0dc5.png",
+    "dataFormat": "png",
+    "size": 70190,
+    "rotationCenterX": 76,
+    "rotationCenterY": 160,
+    "bitmapResolution": 1
+  },
+  "kursik_hover": {
+    "assetId": "468adcb7986cc0d1e6efd0ed5ebf1981",
+    "name": "kursik_hover",
+    "md5ext": "468adcb7986cc0d1e6efd0ed5ebf1981.png",
+    "dataFormat": "png",
+    "size": 52609,
+    "rotationCenterX": 81,
+    "rotationCenterY": 90,
+    "bitmapResolution": 1
+  },
+  "kursik_talk": {
+    "assetId": "b8140f27b1b332d7316af7c5e8f5af71",
+    "name": "kursik_talk",
+    "md5ext": "b8140f27b1b332d7316af7c5e8f5af71.png",
+    "dataFormat": "png",
+    "size": 52576,
+    "rotationCenterX": 81,
+    "rotationCenterY": 90,
+    "bitmapResolution": 1
+  },
+  "kursik_scan": {
+    "assetId": "b8f93b7570b9942cf62358e2f752cfe8",
+    "name": "kursik_scan",
+    "md5ext": "b8f93b7570b9942cf62358e2f752cfe8.png",
+    "dataFormat": "png",
+    "size": 47552,
+    "rotationCenterX": 81,
+    "rotationCenterY": 90,
+    "bitmapResolution": 1
+  },
+  "kursik_celebrate": {
+    "assetId": "bab43718bae3aecd4c4e06a53d7848e8",
+    "name": "kursik_celebrate",
+    "md5ext": "bab43718bae3aecd4c4e06a53d7848e8.png",
+    "dataFormat": "png",
+    "size": 52644,
+    "rotationCenterX": 81,
+    "rotationCenterY": 90,
+    "bitmapResolution": 1
+  },
+  "dlg_intro_1": {
+    "assetId": "91ea75f1cd40f2723fffc5e6dafe008d",
+    "name": "dlg_intro_1",
+    "md5ext": "91ea75f1cd40f2723fffc5e6dafe008d.png",
+    "dataFormat": "png",
+    "size": 27803,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_intro_2": {
+    "assetId": "80b72c79e9b245b97e7a3410953d30db",
+    "name": "dlg_intro_2",
+    "md5ext": "80b72c79e9b245b97e7a3410953d30db.png",
+    "dataFormat": "png",
+    "size": 27967,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_semenov_1": {
+    "assetId": "8e0975d36d297e511a01356914697b30",
+    "name": "dlg_semenov_1",
+    "md5ext": "8e0975d36d297e511a01356914697b30.png",
+    "dataFormat": "png",
+    "size": 28894,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_semenov_2": {
+    "assetId": "106f43cd89cc366f2bf3227a0a9c68f2",
+    "name": "dlg_semenov_2",
+    "md5ext": "106f43cd89cc366f2bf3227a0a9c68f2.png",
+    "dataFormat": "png",
+    "size": 28703,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_semenov_task": {
+    "assetId": "80bbc776d90f57fed37c7a1748f3a959",
+    "name": "dlg_semenov_task",
+    "md5ext": "80bbc776d90f57fed37c7a1748f3a959.png",
+    "dataFormat": "png",
+    "size": 29233,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_ufimtsev_1": {
+    "assetId": "558091925f6f7c4934952a326fd13977",
+    "name": "dlg_ufimtsev_1",
+    "md5ext": "558091925f6f7c4934952a326fd13977.png",
+    "dataFormat": "png",
+    "size": 28533,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_ufimtsev_2": {
+    "assetId": "6d8828d38851ceffc2df086085f3611e",
+    "name": "dlg_ufimtsev_2",
+    "md5ext": "6d8828d38851ceffc2df086085f3611e.png",
+    "dataFormat": "png",
+    "size": 27395,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_ufimtsev_task": {
+    "assetId": "2e528f92f3de8bb3179423c102083e43",
+    "name": "dlg_ufimtsev_task",
+    "md5ext": "2e528f92f3de8bb3179423c102083e43.png",
+    "dataFormat": "png",
+    "size": 28395,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_lazarev_1": {
+    "assetId": "f5b6c935a0d0169e66f426a3763b1a67",
+    "name": "dlg_lazarev_1",
+    "md5ext": "f5b6c935a0d0169e66f426a3763b1a67.png",
+    "dataFormat": "png",
+    "size": 28825,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_lazarev_2": {
+    "assetId": "bab2c335c0bb3becc93845dffa00e0dd",
+    "name": "dlg_lazarev_2",
+    "md5ext": "bab2c335c0bb3becc93845dffa00e0dd.png",
+    "dataFormat": "png",
+    "size": 28679,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_lazarev_task": {
+    "assetId": "3ee859682673e374efc9e0f73193c720",
+    "name": "dlg_lazarev_task",
+    "md5ext": "3ee859682673e374efc9e0f73193c720.png",
+    "dataFormat": "png",
+    "size": 28705,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_quiz_intro": {
+    "assetId": "5379ac166eff69c636850f42150425f4",
+    "name": "dlg_quiz_intro",
+    "md5ext": "5379ac166eff69c636850f42150425f4.png",
+    "dataFormat": "png",
+    "size": 28412,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
+  "dlg_victory": {
+    "assetId": "3a93e7aaf5870d27ac16fc24807a05b7",
+    "name": "dlg_victory",
+    "md5ext": "3a93e7aaf5870d27ac16fc24807a05b7.png",
+    "dataFormat": "png",
+    "size": 29133,
+    "rotationCenterX": 184,
+    "rotationCenterY": 32,
+    "bitmapResolution": 2
+  },
   "snd_click": {
-    "assetId": "0c3bfff7624b60fe582e4f09a4f56cf9",
+    "assetId": "295dc6edccb4b398553eb5bac5ace592",
     "name": "snd_click",
-    "md5ext": "0c3bfff7624b60fe582e4f09a4f56cf9.wav",
+    "md5ext": "295dc6edccb4b398553eb5bac5ace592.wav",
     "dataFormat": "wav",
     "size": 4454,
     "rate": 44100,
-    "sampleCount": 2205
+    "sampleCount": 2227
   },
   "snd_teleport": {
-    "assetId": "8358e548d7c69f1afe5ec11fe7c6d4be",
+    "assetId": "947b78091c4e62413cb584a8a713bd76",
     "name": "snd_teleport",
-    "md5ext": "8358e548d7c69f1afe5ec11fe7c6d4be.wav",
+    "md5ext": "947b78091c4e62413cb584a8a713bd76.wav",
     "dataFormat": "wav",
     "size": 39734,
     "rate": 44100,
-    "sampleCount": 19845
+    "sampleCount": 19867
   },
   "snd_focus": {
-    "assetId": "d34e0a6e8bea0419c7ab8275e33770ce",
+    "assetId": "186f1ad5e6c684391f236f7ac7fd2dec",
     "name": "snd_focus",
-    "md5ext": "d34e0a6e8bea0419c7ab8275e33770ce.wav",
+    "md5ext": "186f1ad5e6c684391f236f7ac7fd2dec.wav",
     "dataFormat": "wav",
     "size": 10628,
     "rate": 44100,
-    "sampleCount": 5292
+    "sampleCount": 5314
   },
   "snd_wind": {
-    "assetId": "96e09b3d343a37bf831ca2e3ba5d727e",
+    "assetId": "ba41267d80b5508b7be9be459ad7e967",
     "name": "snd_wind",
-    "md5ext": "96e09b3d343a37bf831ca2e3ba5d727e.wav",
+    "md5ext": "ba41267d80b5508b7be9be459ad7e967.wav",
     "dataFormat": "wav",
     "size": 61782,
     "rate": 44100,
-    "sampleCount": 30869
+    "sampleCount": 30891
   },
   "snd_magnet": {
-    "assetId": "c7f8f119e888d8f4490e9318ddbf44a7",
+    "assetId": "3d16f9af869771e1cb3ee226136ad36c",
     "name": "snd_magnet",
-    "md5ext": "c7f8f119e888d8f4490e9318ddbf44a7.wav",
+    "md5ext": "3d16f9af869771e1cb3ee226136ad36c.wav",
     "dataFormat": "wav",
     "size": 24740,
     "rate": 44100,
-    "sampleCount": 12348
+    "sampleCount": 12370
   },
   "snd_correct": {
-    "assetId": "65e83a2fa309914910e916af8c59f974",
+    "assetId": "f19e1f50d6988c98806d79be9cacb0e8",
     "name": "snd_correct",
-    "md5ext": "65e83a2fa309914910e916af8c59f974.wav",
+    "md5ext": "f19e1f50d6988c98806d79be9cacb0e8.wav",
     "dataFormat": "wav",
     "size": 39734,
     "rate": 44100,
-    "sampleCount": 19845
+    "sampleCount": 19867
   },
   "snd_wrong": {
-    "assetId": "6f2e9b437a0d824e299f0feb354caf25",
+    "assetId": "f4f2e8479ef51919e7729497a2d62537",
     "name": "snd_wrong",
-    "md5ext": "6f2e9b437a0d824e299f0feb354caf25.wav",
+    "md5ext": "f4f2e8479ef51919e7729497a2d62537.wav",
     "dataFormat": "wav",
     "size": 17684,
     "rate": 44100,
-    "sampleCount": 8820
+    "sampleCount": 8842
   },
   "snd_fanfare": {
-    "assetId": "2081d4cb761181e0dc903c30d5a84d6c",
+    "assetId": "b468444bac6c958e0af48bfd3cc65bb9",
     "name": "snd_fanfare",
-    "md5ext": "2081d4cb761181e0dc903c30d5a84d6c.wav",
+    "md5ext": "b468444bac6c958e0af48bfd3cc65bb9.wav",
     "dataFormat": "wav",
     "size": 97064,
     "rate": 44100,
-    "sampleCount": 48510
-  },
-  "bg_title": {
-    "assetId": "0ddaf4ba71172fe0d3dc7d21b3241912",
-    "name": "bg_title",
-    "md5ext": "0ddaf4ba71172fe0d3dc7d21b3241912.svg",
-    "dataFormat": "svg",
-    "size": 4467,
-    "rotationCenterX": 240,
-    "rotationCenterY": 180
-  },
-  "bg_semenov": {
-    "assetId": "1f60b5c4b5e2c1ba15b6295bc69d253e",
-    "name": "bg_semenov",
-    "md5ext": "1f60b5c4b5e2c1ba15b6295bc69d253e.svg",
-    "dataFormat": "svg",
-    "size": 3886,
-    "rotationCenterX": 240,
-    "rotationCenterY": 180
-  },
-  "bg_ufimtsev": {
-    "assetId": "300c6fdf4e12b981662a966f6845aa92",
-    "name": "bg_ufimtsev",
-    "md5ext": "300c6fdf4e12b981662a966f6845aa92.svg",
-    "dataFormat": "svg",
-    "size": 3618,
-    "rotationCenterX": 240,
-    "rotationCenterY": 180
-  },
-  "bg_kma_aes": {
-    "assetId": "7a3cc4b6d23104bd9a2a23f52e128cdc",
-    "name": "bg_kma_aes",
-    "md5ext": "7a3cc4b6d23104bd9a2a23f52e128cdc.svg",
-    "dataFormat": "svg",
-    "size": 3079,
-    "rotationCenterX": 240,
-    "rotationCenterY": 180
-  },
-  "bg_hall_of_fame": {
-    "assetId": "d50ba1a82a622208d8ab8359e0a9e14b",
-    "name": "bg_hall_of_fame",
-    "md5ext": "d50ba1a82a622208d8ab8359e0a9e14b.svg",
-    "dataFormat": "svg",
-    "size": 4621,
-    "rotationCenterX": 240,
-    "rotationCenterY": 180
-  },
-  "hero_copt": {
-    "assetId": "afb3f1975665bc03fbe7880e3861caee",
-    "name": "hero_copt",
-    "md5ext": "afb3f1975665bc03fbe7880e3861caee.svg",
-    "dataFormat": "svg",
-    "size": 1383,
-    "rotationCenterX": 35,
-    "rotationCenterY": 55
-  },
-  "hero_astronomer": {
-    "assetId": "b15bc8e4ddda8b5da1ff276d0d3b132a",
-    "name": "hero_astronomer",
-    "md5ext": "b15bc8e4ddda8b5da1ff276d0d3b132a.svg",
-    "dataFormat": "svg",
-    "size": 1175,
-    "rotationCenterX": 35,
-    "rotationCenterY": 55
-  },
-  "hero_aviator": {
-    "assetId": "582263e4afdac7afa6ebf8d8ded6a8b9",
-    "name": "hero_aviator",
-    "md5ext": "582263e4afdac7afa6ebf8d8ded6a8b9.svg",
-    "dataFormat": "svg",
-    "size": 1136,
-    "rotationCenterX": 35,
-    "rotationCenterY": 55
-  },
-  "hero_physicist": {
-    "assetId": "fd8d4af3f5ccc47b0764266da4be2895",
-    "name": "hero_physicist",
-    "md5ext": "fd8d4af3f5ccc47b0764266da4be2895.svg",
-    "dataFormat": "svg",
-    "size": 1045,
-    "rotationCenterX": 35,
-    "rotationCenterY": 55
-  },
-  "hero_triumph": {
-    "assetId": "4f229ccea5ba0f8d838ea600f62ffe07",
-    "name": "hero_triumph",
-    "md5ext": "4f229ccea5ba0f8d838ea600f62ffe07.svg",
-    "dataFormat": "svg",
-    "size": 1069,
-    "rotationCenterX": 35,
-    "rotationCenterY": 55
-  },
-  "kursik_hover": {
-    "assetId": "4e7ee4a036d9c2cd1f4a0b15fa843e19",
-    "name": "kursik_hover",
-    "md5ext": "4e7ee4a036d9c2cd1f4a0b15fa843e19.svg",
-    "dataFormat": "svg",
-    "size": 1089,
-    "rotationCenterX": 32,
-    "rotationCenterY": 25
-  },
-  "kursik_talk": {
-    "assetId": "0e94cd89091783dabe407cbb29916e92",
-    "name": "kursik_talk",
-    "md5ext": "0e94cd89091783dabe407cbb29916e92.svg",
-    "dataFormat": "svg",
-    "size": 738,
-    "rotationCenterX": 32,
-    "rotationCenterY": 25
-  },
-  "kursik_scan": {
-    "assetId": "b77c5067aa9716766c23001461ba7d2a",
-    "name": "kursik_scan",
-    "md5ext": "b77c5067aa9716766c23001461ba7d2a.svg",
-    "dataFormat": "svg",
-    "size": 627,
-    "rotationCenterX": 32,
-    "rotationCenterY": 25
-  },
-  "kursik_celebrate": {
-    "assetId": "b7bc3c5cc4098cfd8b82a41f4977e3c5",
-    "name": "kursik_celebrate",
-    "md5ext": "b7bc3c5cc4098cfd8b82a41f4977e3c5.svg",
-    "dataFormat": "svg",
-    "size": 708,
-    "rotationCenterX": 32,
-    "rotationCenterY": 25
-  },
-  "char_semenov": {
-    "assetId": "62351910f787979bbbaf830a65bc1b45",
-    "name": "char_semenov",
-    "md5ext": "62351910f787979bbbaf830a65bc1b45.svg",
-    "dataFormat": "svg",
-    "size": 1400,
-    "rotationCenterX": 40,
-    "rotationCenterY": 60
-  },
-  "char_ufimtsev": {
-    "assetId": "0f28ea53b35c0d47e5bbb714fb2632ce",
-    "name": "char_ufimtsev",
-    "md5ext": "0f28ea53b35c0d47e5bbb714fb2632ce.svg",
-    "dataFormat": "svg",
-    "size": 1288,
-    "rotationCenterX": 40,
-    "rotationCenterY": 60
-  },
-  "char_lazarev": {
-    "assetId": "fc1b82221b868ff7e74b05ab3ac7379f",
-    "name": "char_lazarev",
-    "md5ext": "fc1b82221b868ff7e74b05ab3ac7379f.svg",
-    "dataFormat": "svg",
-    "size": 1234,
-    "rotationCenterX": 40,
-    "rotationCenterY": 60
-  },
-  "telescope_lens": {
-    "assetId": "e8830d3e982c30be376f72d638efa9d1",
-    "name": "telescope_lens",
-    "md5ext": "e8830d3e982c30be376f72d638efa9d1.svg",
-    "dataFormat": "svg",
-    "size": 685,
-    "rotationCenterX": 45,
-    "rotationCenterY": 45
-  },
-  "telescope_lens_sharp": {
-    "assetId": "80a9bacefd5a2fa4c7a72048228a879b",
-    "name": "telescope_lens_sharp",
-    "md5ext": "80a9bacefd5a2fa4c7a72048228a879b.svg",
-    "dataFormat": "svg",
-    "size": 703,
-    "rotationCenterX": 45,
-    "rotationCenterY": 45
-  },
-  "eclipse_target": {
-    "assetId": "2b197d8629040a2f6c4ac303902e3bd7",
-    "name": "eclipse_target",
-    "md5ext": "2b197d8629040a2f6c4ac303902e3bd7.svg",
-    "dataFormat": "svg",
-    "size": 554,
-    "rotationCenterX": 30,
-    "rotationCenterY": 30
-  },
-  "wind_rotor": {
-    "assetId": "079a09364038ef94c4c3d1fa8a0c2f6b",
-    "name": "wind_rotor",
-    "md5ext": "079a09364038ef94c4c3d1fa8a0c2f6b.svg",
-    "dataFormat": "svg",
-    "size": 726,
-    "rotationCenterX": 55,
-    "rotationCenterY": 55
-  },
-  "flywheel_meter": {
-    "assetId": "c004851813c5a5cf1c3bbcdc46d7f97d",
-    "name": "flywheel_meter",
-    "md5ext": "c004851813c5a5cf1c3bbcdc46d7f97d.svg",
-    "dataFormat": "svg",
-    "size": 765,
-    "rotationCenterX": 45,
-    "rotationCenterY": 45
-  },
-  "magneto_sensor": {
-    "assetId": "6d537d845c738f8ac8a7a3da335cde00",
-    "name": "magneto_sensor",
-    "md5ext": "6d537d845c738f8ac8a7a3da335cde00.svg",
-    "dataFormat": "svg",
-    "size": 651,
-    "rotationCenterX": 35,
-    "rotationCenterY": 35
-  },
-  "ore_vein": {
-    "assetId": "b039c5260be1956abfe873c151b10873",
-    "name": "ore_vein",
-    "md5ext": "b039c5260be1956abfe873c151b10873.svg",
-    "dataFormat": "svg",
-    "size": 569,
-    "rotationCenterX": 35,
-    "rotationCenterY": 22
-  },
-  "dialog_plate": {
-    "assetId": "f252c64a45ac5cef90b652a5e3637409",
-    "name": "dialog_plate",
-    "md5ext": "f252c64a45ac5cef90b652a5e3637409.svg",
-    "dataFormat": "svg",
-    "size": 723,
-    "rotationCenterX": 220,
-    "rotationCenterY": 40
-  },
-  "hud_bar": {
-    "assetId": "cbe85d3b554e58072a8f4e1a3423861a",
-    "name": "hud_bar",
-    "md5ext": "cbe85d3b554e58072a8f4e1a3423861a.svg",
-    "dataFormat": "svg",
-    "size": 608,
-    "rotationCenterX": 230,
-    "rotationCenterY": 13
-  },
-  "btn_start": {
-    "assetId": "bfd5740c0c0c5ed88d44cd30161cd17c",
-    "name": "btn_start",
-    "md5ext": "bfd5740c0c0c5ed88d44cd30161cd17c.svg",
-    "dataFormat": "svg",
-    "size": 478,
-    "rotationCenterX": 90,
-    "rotationCenterY": 20
-  },
-  "btn_rules": {
-    "assetId": "ac6e11fcfc255afe26477b897abc9be2",
-    "name": "btn_rules",
-    "md5ext": "ac6e11fcfc255afe26477b897abc9be2.svg",
-    "dataFormat": "svg",
-    "size": 471,
-    "rotationCenterX": 80,
-    "rotationCenterY": 18
-  },
-  "btn_authors": {
-    "assetId": "a77bb4385ee07e4eb5c5fcb89d6e256b",
-    "name": "btn_authors",
-    "md5ext": "a77bb4385ee07e4eb5c5fcb89d6e256b.svg",
-    "dataFormat": "svg",
-    "size": 473,
-    "rotationCenterX": 80,
-    "rotationCenterY": 18
-  },
-  "btn_opt_a": {
-    "assetId": "623d25f11b87f24a9d76aec543148441",
-    "name": "btn_opt_a",
-    "md5ext": "623d25f11b87f24a9d76aec543148441.svg",
-    "dataFormat": "svg",
-    "size": 504,
-    "rotationCenterX": 170,
-    "rotationCenterY": 16
-  },
-  "btn_opt_b": {
-    "assetId": "19b11a39d1e6bf1d7695d7a0d6260cb8",
-    "name": "btn_opt_b",
-    "md5ext": "19b11a39d1e6bf1d7695d7a0d6260cb8.svg",
-    "dataFormat": "svg",
-    "size": 484,
-    "rotationCenterX": 170,
-    "rotationCenterY": 16
-  },
-  "btn_opt_c": {
-    "assetId": "e2dc70037bc59a6c71b957e75492e9fd",
-    "name": "btn_opt_c",
-    "md5ext": "e2dc70037bc59a6c71b957e75492e9fd.svg",
-    "dataFormat": "svg",
-    "size": 499,
-    "rotationCenterX": 170,
-    "rotationCenterY": 16
-  },
-  "btn_brake": {
-    "assetId": "43d8065a7cc917ce2d849381546a6894",
-    "name": "btn_brake",
-    "md5ext": "43d8065a7cc917ce2d849381546a6894.svg",
-    "dataFormat": "svg",
-    "size": 470,
-    "rotationCenterX": 65,
-    "rotationCenterY": 17
-  },
-  "btn_gear": {
-    "assetId": "31642756ab2f6399c2b417db869d6ebb",
-    "name": "btn_gear",
-    "md5ext": "31642756ab2f6399c2b417db869d6ebb.svg",
-    "dataFormat": "svg",
-    "size": 478,
-    "rotationCenterX": 70,
-    "rotationCenterY": 17
-  },
-  "btn_drill": {
-    "assetId": "1099dbdd88f146469fcf5c951d30feb9",
-    "name": "btn_drill",
-    "md5ext": "1099dbdd88f146469fcf5c951d30feb9.svg",
-    "dataFormat": "svg",
-    "size": 475,
-    "rotationCenterX": 70,
-    "rotationCenterY": 17
-  },
-  "btn_lock_focus": {
-    "assetId": "86f67d4693e5ec5c2dda1a71afb526a6",
-    "name": "btn_lock_focus",
-    "md5ext": "86f67d4693e5ec5c2dda1a71afb526a6.svg",
-    "dataFormat": "svg",
-    "size": 483,
-    "rotationCenterX": 75,
-    "rotationCenterY": 17
-  },
-  "fx_medal": {
-    "assetId": "7706a93ff06f059a9c8b1f23e0fac0e3",
-    "name": "fx_medal",
-    "md5ext": "7706a93ff06f059a9c8b1f23e0fac0e3.svg",
-    "dataFormat": "svg",
-    "size": 1129,
-    "rotationCenterX": 45,
-    "rotationCenterY": 45
-  },
-  "fx_spark": {
-    "assetId": "19541ec5c885ce934ade1dbbdb1f2029",
-    "name": "fx_spark",
-    "md5ext": "19541ec5c885ce934ade1dbbdb1f2029.svg",
-    "dataFormat": "svg",
-    "size": 332,
-    "rotationCenterX": 30,
-    "rotationCenterY": 30
+    "sampleCount": 48532
   }
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kursk Heroes Runner</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { margin: 0; background: #0b0f19; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+  #container { width: 480px; height: 360px; }
+  canvas { width: 480px !important; height: 360px !important; display: block; }
+</style>
+</head>
+<body>
+<div id="container"></div>
+<script src="scratch_bundle.js"></script>
+<script src="sb3_b64.js"></script>
+<script>
+function base64ToArrayBuffer(base64) {
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+        bytes[i] = binary.charCodeAt(i);
+    }
+    return bytes.buffer;
+}
+
+window.isReady = false;
+
+async function init() {
+    const container = document.getElementById("container");
+    const canvas = document.createElement("canvas");
+    canvas.width = 480;
+    canvas.height = 360;
+    canvas.tabIndex = 0;
+    container.appendChild(canvas);
+
+    const vm = new window.VirtualMachine();
+    window.vm = vm;
+
+    const storage = new window.ScratchStorage();
+    vm.attachStorage(storage);
+
+    const renderer = new window.ScratchRender(canvas);
+    vm.attachRenderer(renderer);
+
+    if (window.ScratchSVGRenderer && window.ScratchSVGRenderer.BitmapAdapter) {
+        vm.attachV2BitmapAdapter(new window.ScratchSVGRenderer.BitmapAdapter());
+    }
+
+    const projectBuffer = base64ToArrayBuffer(window.SB3_BASE64);
+    await vm.loadProject(projectBuffer);
+
+    vm.start();
+    vm.greenFlag();
+    window.isReady = true;
+    console.log("GAME_LOADED");
+}
+
+window.broadcast = function(name) {
+    window.vm.runtime.startHats("event_whenbroadcastreceived", { BROADCAST_OPTION: name });
+};
+
+window.getSprites = function() {
+    return window.vm.runtime.targets.map(t => ({
+        name: t.sprite.name,
+        isStage: t.isStage,
+        visible: t.visible,
+        x: t.x,
+        y: t.y,
+        size: t.size,
+        currentCostume: t.currentCostume,
+        costumes: t.sprite.costumes.map(c => c.name)
+    }));
+};
+
+window.getVariables = function() {
+    const res = {};
+    for (const [id, v] of Object.entries(window.vm.runtime.getTargetForStage().variables)) {
+        res[v.name] = v.value;
+    }
+    return res;
+};
+
+init().catch(e => {
+    console.error("LOAD_ERR:", e);
+});
+</script>
+</body>
+</html>

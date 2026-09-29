@@ -1,0 +1,1 @@
+/home/dima/isaac-scratch/output/scratch_bundle.js
