@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <circle cx="35" cy="22" r="14" fill="#fed7aa"/>
+  <path d="M 21 22 Q 35 6 49 22 Q 45 10 35 10 Q 25 10 21 22 Z" fill="#78350f"/>
+  <!-- Round brass spectacles -->
+  <circle cx="30" cy="21" r="3.5" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+  <circle cx="40" cy="21" r="3.5" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
+  <line x1="33.5" y1="21" x2="36.5" y2="21" stroke="#f59e0b" stroke-width="1"/>
+  <path d="M 31 29 Q 35 32 39 29" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+  <!-- Victorian Vest & Dark Cloak -->
+  <path d="M 16 38 L 54 38 L 58 85 L 12 85 Z" fill="#1e1b4b"/>
+  <polygon points="26,38 35,55 44,38" fill="#7c2d12"/>
+  <!-- Brass buttons -->
+  <circle cx="35" cy="62" r="1.5" fill="#f59e0b"/>
+  <circle cx="35" cy="72" r="1.5" fill="#f59e0b"/>
+  <!-- Starchart in hand -->
+  <rect x="4" y="60" width="14" height="20" rx="1" fill="#fef08a" stroke="#b45309" stroke-width="0.8"/>
+  <circle cx="11" cy="70" r="3" fill="none" stroke="#b45309" stroke-width="0.8"/>
+  <!-- Legs & Boots -->
+  <line x1="26" y1="85" x2="26" y2="102" stroke="#0f172a" stroke-width="6"/>
+  <line x1="44" y1="85" x2="44" y2="102" stroke="#0f172a" stroke-width="6"/>
+  <ellipse cx="23" cy="104" rx="7" ry="4" fill="#451a03"/>
+  <ellipse cx="47" cy="104" rx="7" ry="4" fill="#451a03"/>
+</svg>

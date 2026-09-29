@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" width="90" height="90">
+  <!-- Outer brass reticle ring -->
+  <circle cx="45" cy="45" r="42" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <circle cx="45" cy="45" r="38" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+  <!-- Crosshairs -->
+  <line x1="45" y1="8" x2="45" y2="82" stroke="#38bdf8" stroke-width="1.2"/>
+  <line x1="8" y1="45" x2="82" y2="45" stroke="#38bdf8" stroke-width="1.2"/>
+  <!-- Inner focus target circle -->
+  <circle cx="45" cy="45" r="14" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+  <circle cx="45" cy="45" r="2" fill="#ef4444"/>
+  <!-- Angle graduation ticks -->
+  <line x1="45" y1="3" x2="45" y2="7" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="45" y1="83" x2="45" y2="87" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="3" y1="45" x2="7" y2="45" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="83" y1="45" x2="87" y2="45" stroke="#f59e0b" stroke-width="2"/>
+</svg>

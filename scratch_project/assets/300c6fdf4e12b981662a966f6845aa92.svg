@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <defs>
+    <linearGradient id="slate_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="brick_facade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f1319"/>
+      <stop offset="100%" stop-color="#24080d"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#slate_sky)"/>
+
+  <!-- Streamlined aerodynamic wind vectors -->
+  <g stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.15" stroke-dasharray="8 6">
+    <line x1="0" y1="50" x2="480" y2="45"/>
+    <line x1="0" y1="90" x2="480" y2="82"/>
+    <line x1="0" y1="130" x2="480" y2="125"/>
+  </g>
+
+  <!-- Street ground pavement -->
+  <rect x="0" y="240" width="480" height="120" fill="#1e293b"/>
+  <line x1="0" y1="240" x2="480" y2="240" stroke="#64748b" stroke-width="1.5"/>
+
+  <!-- Ufimtsev Historic Workshop Facade on Left -->
+  <g transform="translate(0, 115)">
+    <rect width="165" height="125" fill="url(#brick_facade)" stroke="#4c1d24" stroke-width="1"/>
+    <!-- Workshop windows -->
+    <rect x="25" y="30" width="40" height="55" fill="#0f172a" stroke="#d97706" stroke-width="1.5"/>
+    <line x1="45" y1="30" x2="45" y2="85" stroke="#d97706" stroke-width="1"/>
+    <line x1="25" y1="55" x2="65" y2="55" stroke="#d97706" stroke-width="1"/>
+    <!-- Technical signboard -->
+    <rect x="15" y="8" width="135" height="15" rx="2" fill="#0f172a" stroke="#64748b" stroke-width="0.8"/>
+    <text x="82" y="19" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#f8fafc" text-anchor="middle" letter-spacing="0.5">МАСТЕРСКАЯ А.Г. УФИМЦЕВА • 1931</text>
+  </g>
+
+  <!-- Precision Steel Lattice Tower (Ветроэлектростанция ВЭС-1) -->
+  <polygon points="325,45 345,45 370,240 300,240" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+  <g stroke="#94a3b8" stroke-width="1" opacity="0.6">
+    <line x1="325" y1="45" x2="370" y2="240"/>
+    <line x1="345" y1="45" x2="300" y2="240"/>
+    <line x1="320" y1="80" x2="350" y2="80"/>
+    <line x1="315" y1="120" x2="355" y2="120"/>
+    <line x1="310" y1="160" x2="360" y2="160"/>
+    <line x1="305" y1="200" x2="365" y2="200"/>
+  </g>
+
+  <!-- Vintage Street Lantern connected to electric cable -->
+  <rect x="435" y="170" width="4" height="75" fill="#0f172a"/>
+  <circle cx="437" cy="165" r="10" fill="#fef08a" opacity="0.7"/>
+  <circle cx="437" cy="165" r="4" fill="#ffffff"/>
+  <!-- Cable to workshop -->
+  <path d="M 335 55 Q 380 90 435 165" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-dasharray="3 2" opacity="0.6"/>
+
+  <!-- Liquid Glass Header -->
+  <g transform="translate(60, 8)">
+    <rect width="360" height="22" rx="4" fill="#0f172a" fill-opacity="0.82" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.4"/>
+    <line x1="1" y1="1" x2="359" y2="1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="180" y="15" font-family="sans-serif" font-size="9" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="1">КУРСК • 1931 г. • ВЕТРОСТАНЦИЯ А.Г. УФИМЦЕВА (ВЭС-1)</text>
+  </g>
+
+  <!-- Telemetry specs -->
+  <g font-family="monospace" font-size="7.5" fill="#94a3b8" opacity="0.7" text-anchor="end">
+    <text x="468" y="24">FLYWHEEL: 3.5 TONS</text>
+    <text x="468" y="36">VACUUM: -0.98 BAR</text>
+    <text x="468" y="48">PATENT: No. 68</text>
+  </g>
+</svg>

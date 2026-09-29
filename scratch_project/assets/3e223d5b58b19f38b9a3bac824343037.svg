@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <circle cx="35" cy="24" r="13" fill="#fed7aa"/>
+  <!-- Aviator leather helmet -->
+  <path d="M 21 24 Q 35 10 49 24 L 49 32 L 44 32 L 44 26 Q 35 15 26 26 L 26 32 L 21 32 Z" fill="#78350f"/>
+  <!-- Aviator Goggles on forehead -->
+  <rect x="24" y="14" width="10" height="6" rx="2" fill="#38bdf8" stroke="#f59e0b" stroke-width="1"/>
+  <rect x="36" y="14" width="10" height="6" rx="2" fill="#38bdf8" stroke="#f59e0b" stroke-width="1"/>
+  <line x1="34" y1="17" x2="36" y2="17" stroke="#78350f" stroke-width="1.5"/>
+  <!-- Face -->
+  <circle cx="30" cy="24" r="2" fill="#0f172a"/>
+  <circle cx="40" cy="24" r="2" fill="#0f172a"/>
+  <path d="M 31 30 Q 35 34 39 30" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+  <!-- Brown flight jacket with fleece collar -->
+  <path d="M 18 40 L 52 40 L 54 82 L 16 82 Z" fill="#9a3412"/>
+  <path d="M 20 40 Q 35 48 50 40 L 46 48 L 24 48 Z" fill="#fef08a"/>
+  <!-- Wrench in right hand -->
+  <path d="M 8 55 L 12 75" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="7" cy="55" r="4" fill="none" stroke="#64748b" stroke-width="2"/>
+  <!-- Legs -->
+  <line x1="26" y1="82" x2="26" y2="102" stroke="#334155" stroke-width="6"/>
+  <line x1="44" y1="82" x2="44" y2="102" stroke="#334155" stroke-width="6"/>
+  <ellipse cx="23" cy="104" rx="7" ry="4" fill="#1e293b"/>
+  <ellipse cx="47" cy="104" rx="7" ry="4" fill="#1e293b"/>
+</svg>

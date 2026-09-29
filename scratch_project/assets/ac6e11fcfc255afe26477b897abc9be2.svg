@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 36" width="160" height="36">
+  <rect x="1" y="1" width="158" height="34" rx="6" fill="#0369a1" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="2" y1="2" x2="158" y2="2" stroke="#ffffff" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="80.0" y="22.0" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">ПРАВИЛА И ЗАДАЧИ</text>
+</svg>

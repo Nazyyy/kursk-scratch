@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <defs>
+    <linearGradient id="night_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="wood_floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#271002"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky background through dome slit -->
+  <rect width="480" height="360" fill="url(#night_sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="50" cy="45" r="1.5" opacity="0.9"/>
+    <circle cx="95" cy="70" r="1.2" opacity="0.8"/>
+    <circle cx="140" cy="35" r="1.8" opacity="0.95"/>
+    <circle cx="180" cy="85" r="1" opacity="0.7"/>
+    <circle cx="230" cy="40" r="1.4" opacity="0.85"/>
+    <circle cx="310" cy="55" r="1.6" opacity="0.9"/>
+    <circle cx="380" cy="30" r="2" opacity="1"/>
+    <circle cx="430" cy="75" r="1.2" opacity="0.8"/>
+    <circle cx="460" cy="110" r="1.5" opacity="0.75"/>
+    <circle cx="80" cy="130" r="1.3" opacity="0.85"/>
+    <circle cx="160" cy="140" r="1.1" opacity="0.6"/>
+  </g>
+
+  <!-- Constellation Ursa Major lines -->
+  <g stroke="#93c5fd" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.5">
+    <line x1="310" y1="55" x2="340" y2="65"/>
+    <line x1="340" y1="65" x2="380" y2="30"/>
+    <line x1="380" y1="30" x2="410" y2="45"/>
+    <line x1="410" y1="45" x2="430" y2="75"/>
+    <line x1="430" y1="75" x2="395" y2="90"/>
+    <line x1="395" y1="90" x2="380" y2="30"/>
+  </g>
+
+  <!-- Wooden Observatory Dome Opening -->
+  <path d="M 0 0 L 120 0 L 120 220 L 0 240 Z" fill="#311e11"/>
+  <path d="M 360 0 L 480 0 L 480 240 L 360 220 Z" fill="#311e11"/>
+  <path d="M 120 0 Q 240 60 360 0 L 360 20 Q 240 75 120 20 Z" fill="#452514"/>
+
+  <!-- Wooden pillars -->
+  <rect x="110" y="0" width="16" height="230" fill="#24140b"/>
+  <rect x="354" y="0" width="16" height="230" fill="#24140b"/>
+
+  <!-- Wooden Floor -->
+  <polygon points="0,230 480,230 480,360 0,360" fill="url(#wood_floor)"/>
+  <g stroke="#1b0b02" stroke-width="1.5" opacity="0.6">
+    <line x1="0" y1="260" x2="480" y2="260"/>
+    <line x1="0" y1="295" x2="480" y2="295"/>
+    <line x1="0" y1="330" x2="480" y2="330"/>
+  </g>
+
+  <!-- Antique table & manuscripts on left -->
+  <rect x="15" y="240" width="90" height="50" fill="#582a0e" rx="3"/>
+  <rect x="25" y="235" width="35" height="6" fill="#fef08a" opacity="0.8"/>
+  <rect x="65" y="233" width="30" height="8" fill="#e2e8f0" opacity="0.9"/>
+  <!-- Astrolabe on table -->
+  <circle cx="80" cy="225" r="10" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <line x1="80" y1="215" x2="80" y2="235" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Header banner -->
+  <rect x="80" y="6" width="320" height="22" rx="4" fill="#000000" fill-opacity="0.6" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="240" y="21" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fef08a" text-anchor="middle">КУРСК • 1853 г. • ОБСЕРВАТОРИЯ Ф.А. СЕМЁНОВА</text>
+</svg>

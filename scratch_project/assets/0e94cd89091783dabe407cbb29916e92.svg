@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 50" width="64" height="50">
+  <ellipse cx="30" cy="24" rx="18" ry="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+  <polygon points="18,22 28,6 36,22" fill="#1e293b" stroke="#0284c7" stroke-width="1"/>
+  <circle cx="46" cy="20" r="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="48" cy="18" r="3.5" fill="#38bdf8"/>
+  <polygon points="54,18 62,20 54,22" fill="#f59e0b"/>
+  <polygon points="12,24 2,19 8,26" fill="#0284c7"/>
+  <!-- Acoustic communication rings -->
+  <path d="M 58 14 Q 63 20 58 26" stroke="#38bdf8" stroke-width="1.2" fill="none"/>
+  <path d="M 61 11 Q 67 20 61 29" stroke="#38bdf8" stroke-width="0.8" fill="none" opacity="0.6"/>
+</svg>

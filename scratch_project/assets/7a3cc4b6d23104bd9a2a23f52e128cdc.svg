@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <defs>
+    <linearGradient id="kma_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="60%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#kma_sky)"/>
+
+  <!-- Electromagnetic flux curves of the anomaly -->
+  <g stroke="#0284c7" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.4" fill="none">
+    <path d="M 30 170 Q 140 20 270 170"/>
+    <path d="M 60 170 Q 150 50 240 170"/>
+    <path d="M 10 180 Q 160 5 310 180"/>
+  </g>
+
+  <!-- Distant Clean Atomic Energy Cluster: Kursk NPP-2 (г. Курчатов) -->
+  <g transform="translate(340, 105)">
+    <!-- Cooling towers -->
+    <path d="M 20 65 Q 23 35 18 10 L 40 10 Q 35 35 38 65 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1"/>
+    <path d="M 48 65 Q 51 35 46 10 L 68 10 Q 63 35 66 65 Z" fill="#e2e8f0" stroke="#64748b" stroke-width="1"/>
+    <!-- Reactor building VVER-TOI -->
+    <rect x="75" y="25" width="42" height="40" fill="#cbd5e1" stroke="#64748b" stroke-width="1"/>
+    <ellipse cx="96" cy="25" rx="16" ry="7" fill="#38bdf8" opacity="0.6"/>
+    <!-- Atomic symbol -->
+    <circle cx="96" cy="2" r="8" fill="none" stroke="#0284c7" stroke-width="1.2"/>
+    <ellipse cx="96" cy="2" rx="12" ry="3.5" fill="none" stroke="#0284c7" stroke-width="0.8" transform="rotate(30 96 2)"/>
+    <ellipse cx="96" cy="2" rx="12" ry="3.5" fill="none" stroke="#0284c7" stroke-width="0.8" transform="rotate(-30 96 2)"/>
+  </g>
+
+  <!-- Stepped Geological Terraces of the KMA Iron Ore Open Pit -->
+  <polygon points="0,170 320,170 290,195 0,195" fill="#7c2d12"/>
+  <polygon points="0,195 480,180 450,225 0,225" fill="#5c1d0e"/>
+  <polygon points="0,225 480,225 430,260 0,260" fill="#3b1207"/>
+  <polygon points="0,260 480,260 480,360 0,360" fill="#0f172a"/>
+
+  <!-- High-grade Magnetite Quartzite layer -->
+  <polygon points="70,268 330,268 310,312 50,312" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 2"/>
+  <text x="180" y="295" font-family="monospace" font-size="8.5" font-weight="bold" fill="#38bdf8" letter-spacing="1">ПЛАСТ МАГНЕТИТА Fe3O4 • КМА</text>
+
+  <!-- Liquid Glass Header -->
+  <g transform="translate(60, 8)">
+    <rect width="360" height="22" rx="4" fill="#0f172a" fill-opacity="0.85" stroke="#0284c7" stroke-width="0.75" stroke-opacity="0.4"/>
+    <line x1="1" y1="1" x2="359" y2="1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="180" y="15" font-family="sans-serif" font-size="9" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="1">КУРСКИЙ КРАЙ • КМА И ЭНЕРГИЯ АТОМА (г. КУРЧАТОВ)</text>
+  </g>
+
+  <g font-family="monospace" font-size="7.5" fill="#0369a1" opacity="0.85">
+    <text x="12" y="22">MAG_IND: 42.8 µT</text>
+    <text x="12" y="34">ORE: 30+ BILLION TONS</text>
+    <text x="12" y="46">PWR: VVER-TOI 1255 MWe</text>
+  </g>
+</svg>

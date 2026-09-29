@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <!-- Body/Head -->
+  <circle cx="35" cy="22" r="14" fill="#fed7aa"/>
+  <!-- Hair -->
+  <path d="M 21 22 Q 35 6 49 22 Q 45 10 35 10 Q 25 10 21 22 Z" fill="#92400e"/>
+  <!-- Eyes & Smile -->
+  <circle cx="30" cy="21" r="2" fill="#0f172a"/>
+  <circle cx="40" cy="21" r="2" fill="#0f172a"/>
+  <path d="M 31 28 Q 35 32 39 28" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+  <!-- IT-ЦОПП Hoodie (Blue & Cyan) -->
+  <path d="M 20 40 L 50 40 L 54 80 L 16 80 Z" fill="#0284c7" rx="3"/>
+  <path d="M 27 40 L 35 55 L 43 40" stroke="#f59e0b" stroke-width="2" fill="none"/>
+  <!-- ЦОПП Badge -->
+  <rect x="23" y="48" width="24" height="12" rx="2" fill="#0f172a"/>
+  <text x="35" y="57" font-family="sans-serif" font-size="6" font-weight="bold" fill="#38bdf8" text-anchor="middle">ЦОПП</text>
+  <!-- Arms & Smart Communicator -->
+  <path d="M 20 42 L 10 65" stroke="#0284c7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 50 42 L 58 60 L 52 70" stroke="#0284c7" stroke-width="6" stroke-linecap="round"/>
+  <!-- Wrist screen -->
+  <rect x="7" y="62" width="7" height="6" rx="1" fill="#38bdf8"/>
+  <!-- Legs -->
+  <line x1="26" y1="80" x2="26" y2="102" stroke="#1e293b" stroke-width="6"/>
+  <line x1="44" y1="80" x2="44" y2="102" stroke="#1e293b" stroke-width="6"/>
+  <!-- Shoes -->
+  <ellipse cx="23" cy="104" rx="7" ry="4" fill="#0ea5e9"/>
+  <ellipse cx="47" cy="104" rx="7" ry="4" fill="#0ea5e9"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 80" width="440" height="80">
+  <defs>
+    <linearGradient id="dlg_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <!-- Frame -->
+  <rect x="2" y="2" width="436" height="76" rx="8" fill="url(#dlg_bg)" stroke="#38bdf8" stroke-width="1.5"/>
+  <!-- Inner tech corners -->
+  <path d="M 6 16 L 6 6 L 16 6" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+  <path d="M 434 16 L 434 6 L 424 6" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+  <path d="M 6 64 L 6 74 L 16 74" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+  <path d="M 434 64 L 434 74 L 424 74" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+  <!-- Hint at bottom -->
+  <text x="420" y="72" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="end">[КЛИКНИТЕ ИЛИ НАЖМИТЕ ПРОБЕЛ ДЛЯ ПРОДОЛЖЕНИЯ ▼]</text>
+</svg>

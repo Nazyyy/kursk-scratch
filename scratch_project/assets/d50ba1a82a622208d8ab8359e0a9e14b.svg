@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <defs>
+    <linearGradient id="archive_wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="steel_gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#archive_wall)"/>
+
+  <!-- Precision architectural floor with perspective reflection -->
+  <rect x="0" y="240" width="480" height="120" fill="#0f172a"/>
+  <polygon points="175,240 305,240 340,360 140,360" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+  <line x1="240" y1="240" x2="240" y2="360" stroke="#475569" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+  <!-- Minimalist Neoclassical Fluted Columns -->
+  <g fill="#1e293b" stroke="#334155" stroke-width="1">
+    <rect x="18" y="25" width="22" height="215"/>
+    <rect x="14" y="22" width="30" height="6" fill="#f59e0b"/>
+    <rect x="14" y="238" width="30" height="6" fill="#f59e0b"/>
+
+    <rect x="440" y="25" width="22" height="215"/>
+    <rect x="436" y="22" width="30" height="6" fill="#f59e0b"/>
+    <rect x="436" y="238" width="30" height="6" fill="#f59e0b"/>
+  </g>
+
+  <!-- Three Liquid Glass Architectural Portrait Modules -->
+  <!-- 1. Semenov -->
+  <g transform="translate(56, 50)">
+    <rect width="96" height="128" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="url(#steel_gold)" stroke-width="1.2"/>
+    <line x1="1" y1="1" x2="95" y2="1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+    <circle cx="48" cy="45" r="24" fill="#1e293b"/>
+    <path d="M 40 42 Q 48 34 56 42 Q 58 56 48 60 Q 38 56 40 42 Z" fill="#fde047" opacity="0.8"/>
+    <text x="48" y="86" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#fde047" text-anchor="middle">Ф.А. СЕМЁНОВ</text>
+    <text x="48" y="98" font-family="sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">1794–1860</text>
+    <text x="48" y="112" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#38bdf8" text-anchor="middle">ЗОЛОТАЯ МЕДАЛЬ РАН</text>
+  </g>
+
+  <!-- 2. Ufimtsev -->
+  <g transform="translate(192, 45)">
+    <rect width="96" height="128" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="url(#steel_gold)" stroke-width="1.2"/>
+    <line x1="1" y1="1" x2="95" y2="1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+    <circle cx="48" cy="45" r="24" fill="#1e293b"/>
+    <path d="M 40 42 Q 48 34 56 42 Q 58 56 48 60 Q 38 56 40 42 Z" fill="#38bdf8" opacity="0.8"/>
+    <text x="48" y="86" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#38bdf8" text-anchor="middle">А.Г. УФИМЦЕВ</text>
+    <text x="48" y="98" font-family="sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">1880–1936</text>
+    <text x="48" y="112" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#fde047" text-anchor="middle">ПЕРВАЯ В МИРЕ ВЭС</text>
+  </g>
+
+  <!-- 3. Lazarev -->
+  <g transform="translate(328, 50)">
+    <rect width="96" height="128" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="url(#steel_gold)" stroke-width="1.2"/>
+    <line x1="1" y1="1" x2="95" y2="1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+    <circle cx="48" cy="45" r="24" fill="#1e293b"/>
+    <path d="M 40 42 Q 48 34 56 42 Q 58 56 48 60 Q 38 56 40 42 Z" fill="#4ade80" opacity="0.8"/>
+    <text x="48" y="86" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#4ade80" text-anchor="middle">П.П. ЛАЗАРЕВ</text>
+    <text x="48" y="98" font-family="sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">1878–1942</text>
+    <text x="48" y="112" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#4ade80" text-anchor="middle">ЭКСПЕДИЦИЯ КМА</text>
+  </g>
+
+  <!-- Liquid Glass Header -->
+  <g transform="translate(60, 8)">
+    <rect width="360" height="22" rx="4" fill="#0f172a" fill-opacity="0.85" stroke="#f59e0b" stroke-width="0.75" stroke-opacity="0.4"/>
+    <line x1="1" y1="1" x2="359" y2="1" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="180" y="15" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fde047" text-anchor="middle" letter-spacing="1">ЗАЛ НАУЧНОЙ СЛАВЫ СОЛОВЬИНОГО КРАЯ</text>
+  </g>
+</svg>

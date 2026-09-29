@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <defs>
+    <linearGradient id="deck_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="60%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glass_panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.88"/>
+    </linearGradient>
+    <linearGradient id="gold_accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="360" fill="url(#deck_bg)"/>
+
+  <!-- Precision CAD Grid -->
+  <g stroke="#38bdf8" stroke-width="0.5" stroke-opacity="0.08">
+    <line x1="0" y1="30" x2="480" y2="30"/><line x1="0" y1="60" x2="480" y2="60"/>
+    <line x1="0" y1="90" x2="480" y2="90"/><line x1="0" y1="120" x2="480" y2="120"/>
+    <line x1="0" y1="150" x2="480" y2="150"/><line x1="0" y1="180" x2="480" y2="180"/>
+    <line x1="0" y1="210" x2="480" y2="210"/><line x1="0" y1="240" x2="480" y2="240"/>
+    <line x1="0" y1="270" x2="480" y2="270"/><line x1="0" y1="300" x2="480" y2="300"/>
+    <line x1="0" y1="330" x2="480" y2="330"/>
+    <line x1="40" y1="0" x2="40" y2="360"/><line x1="80" y1="0" x2="80" y2="360"/>
+    <line x1="120" y1="0" x2="120" y2="360"/><line x1="160" y1="0" x2="160" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="360"/><line x1="240" y1="0" x2="240" y2="360"/>
+    <line x1="280" y1="0" x2="280" y2="360"/><line x1="320" y1="0" x2="320" y2="360"/>
+    <line x1="360" y1="0" x2="360" y2="360"/><line x1="400" y1="0" x2="400" y2="360"/>
+    <line x1="440" y1="0" x2="440" y2="360"/>
+  </g>
+
+  <!-- Technical axes crosshairs -->
+  <g stroke="#38bdf8" stroke-width="1" stroke-opacity="0.3">
+    <line x1="235" y1="180" x2="245" y2="180"/>
+    <line x1="240" y1="175" x2="240" y2="185"/>
+  </g>
+
+  <!-- Main Hero Liquid Glass Card -->
+  <g transform="translate(40, 36)">
+    <rect width="400" height="98" rx="8" fill="url(#glass_panel)" stroke="#38bdf8" stroke-width="0.8" stroke-opacity="0.4"/>
+    <!-- Specular highlight line on top edge -->
+    <line x1="2" y1="1" x2="398" y2="1" stroke="#ffffff" stroke-width="1" stroke-opacity="0.6"/>
+    <!-- Top badge -->
+    <rect x="12" y="10" width="138" height="15" rx="3" fill="#0369a1" fill-opacity="0.4" stroke="#0ea5e9" stroke-width="0.6"/>
+    <text x="81" y="21" font-family="sans-serif" font-size="8" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="1">IT-ЦОПП • КУРСКАЯ ОБЛАСТЬ</text>
+    
+    <!-- Title -->
+    <text x="12" y="52" font-family="sans-serif" font-size="20" font-weight="900" fill="#f8fafc" letter-spacing="0.5">АРХИВ ПЕРВОПРОХОДЦЕВ</text>
+    <!-- Subtitle -->
+    <text x="12" y="70" font-family="sans-serif" font-size="11" font-weight="600" fill="url(#gold_accent)" letter-spacing="0.3">Инженерная летопись науки и техники Соловьиного Края</text>
+    
+    <!-- Telemetry right column -->
+    <g font-family="monospace" font-size="8" fill="#64748b" text-anchor="end">
+      <text x="388" y="22">LOC: 51°43′N 36°11′E</text>
+      <text x="388" y="38">SYS: CHRONO-CAD v4.6</text>
+      <text x="388" y="54">CLUSTERS: OPTICS | WIND | CORE</text>
+      <text x="388" y="70">STATUS: READY FOR CADET</text>
+    </g>
+  </g>
+
+  <!-- Central Schematic Rings (Engineering Reticle) -->
+  <circle cx="240" cy="225" r="75" fill="none" stroke="#334155" stroke-width="1"/>
+  <circle cx="240" cy="225" r="50" fill="none" stroke="#0284c7" stroke-width="0.8" stroke-dasharray="4 4" stroke-opacity="0.5"/>
+  <circle cx="240" cy="225" r="25" fill="none" stroke="#f59e0b" stroke-width="0.6" stroke-opacity="0.4"/>
+  <!-- Minimalist engineering nightingale glyph in center -->
+  <path d="M 230 220 Q 240 212 250 220 Q 256 226 252 232 Q 244 235 236 229 Z M 250 220 L 260 222 L 251 224 Z" fill="#38bdf8" opacity="0.75"/>
+
+  <!-- Footer Specs -->
+  <rect x="20" y="336" width="440" height="1" fill="#334155"/>
+  <text x="240" y="348" font-family="sans-serif" font-size="8.5" fill="#64748b" text-anchor="middle" letter-spacing="0.5">ОТКРЫТЫЙ РЕГИОНАЛЬНЫЙ КОНКУРС «IT-ЦОПП» ДЛЯ 6–11 КЛАССОВ</text>
+</svg>

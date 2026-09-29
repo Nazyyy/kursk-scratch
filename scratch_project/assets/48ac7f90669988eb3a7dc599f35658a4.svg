@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <radialGradient id="sun_corona" cx="50%" cy="50%" r="50%">
+      <stop offset="40%" stop-color="#fef08a" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Solar Corona -->
+  <circle cx="30" cy="30" r="28" fill="url(#sun_corona)"/>
+  <!-- Moon disc blocking the Sun (Eclipse) -->
+  <circle cx="28" cy="30" r="18" fill="#020617"/>
+  <!-- Shining diamond ring effect -->
+  <circle cx="45" cy="22" r="5" fill="#ffffff"/>
+  <circle cx="45" cy="22" r="8" fill="#fef08a" opacity="0.6"/>
+</svg>

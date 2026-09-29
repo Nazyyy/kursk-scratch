@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Карьерный Трек, Колледжи и ЦОПП — ОБПОУ «КЭМТ» // IT-ЦОПП</title>
+  <meta name="description" content="Образовательный трек подготовки рабочих кадров в Курской области. ОБПОУ «КЭМТ», партнерские колледжи, федеральный проект «Профессионалитет», интерактивный тест профориентации.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="bg-ambient" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/images/video-poster.jpg">
+      <source src="assets/video/kursk-industry-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <a class="header-brand" href="index.html" aria-label="На главную">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">КЭМТ <span class="brand-badge">IT-ЦОПП</span></span>
+          <span class="brand-sub">Образовательный Трек Курской Области</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Главная навигация">
+        <a class="nav-pill" href="index.html">01 // Главный Атлас</a>
+        <a class="nav-pill" href="vacancies.html">02 // Топ-11 Профессий</a>
+        <a class="nav-pill is-active" href="education.html">03 // Колледжи и ЦОПП</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost btn-sm" id="btn-open-library" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>Реестр заводов</span>
+        </button>
+        <a class="btn btn-solid btn-sm" href="#quiz-section">
+          <span>Тест карьеры</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="burger" id="burger-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sticky Sidebar -->
+    <aside class="sticky-sidebar" id="anchor-nav" aria-label="Навигация по разделам">
+      <a class="sidebar-anchor is-active" href="#education-hero" aria-label="Введение">
+        <span class="anchor-tooltip">01 Введение</span>
+      </a>
+      <a class="sidebar-anchor" href="#kemt-section" aria-label="ОБПОУ КЭМТ">
+        <span class="anchor-tooltip">02 ОБПОУ КЭМТ</span>
+      </a>
+      <a class="sidebar-anchor" href="#colleges-section" aria-label="Колледжи региона">
+        <span class="anchor-tooltip">03 Колледжи СПО</span>
+      </a>
+      <a class="sidebar-anchor" href="#profi-section" aria-label="Профессионалитет">
+        <span class="anchor-tooltip">04 Профессионалитет</span>
+      </a>
+      <a class="sidebar-anchor" href="#copp-section" aria-label="ЦОПП Курск">
+        <span class="anchor-tooltip">05 Инфраструктура ЦОПП</span>
+      </a>
+      <a class="sidebar-anchor" href="#quiz-section" aria-label="Тест карьеры">
+        <span class="anchor-tooltip">06 Тест профориентации</span>
+      </a>
+    </aside>
+
+    <!-- Page Content -->
+    <section class="section" id="education-hero" style="padding-top: calc(var(--header-h) + 40px); padding-bottom: 24px;">
+      <div class="section-header" style="margin-bottom: 32px;">
+        <div class="badge-pill liquid-glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>ОБПОУ «КЭМТ» · СИСТЕМА СПО КУРСКОЙ ОБЛАСТИ</span>
+        </div>
+        <h1 class="section-title">Кузница <em>инженерных кадров</em> Соловьиного края</h1>
+        <p class="section-lead">
+          Где освоить передовые технологии металлообработки, получить аттестацию НАКС и гарантированно 
+          начать трудовую деятельность на флагманских предприятиях Курской области уже во время учебы.
+        </p>
+      </div>
+
+      <!-- KEMT & Regional Colleges Layout -->
+      <div class="education-layout" id="kemt-section">
+        <!-- Main Flagship Card: ОБПОУ КЭМТ -->
+        <article class="kemt-feature-card">
+          <div class="kemt-feature-badge">ФЛАГМАН СПО РЕГИОНА · ЦЕНТР ЧПУ И МЕХАТРОНИКИ</div>
+          <h2 class="kemt-feature-title">ОБПОУ «Курский электромеханический техникум» (КЭМТ)</h2>
+          <p class="kemt-feature-desc">
+            Один из старейших и наиболее оснащенных техникумов России (основан в 1944 году). 
+            Ядро регионального кластера машиностроения и приборостроения. 
+            Современные мастерские оснащены пятиосевыми обрабатывающими центрами Fanuc Robodrill, 
+            токарными комплексами с ЧПУ и стендами промышленной автоматики.
+          </p>
+
+          <ul class="kemt-bullets">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Участок ЧПУ Fanuc:</strong> сквозное обучение от CAD-проектирования (Компас-3D, SolidWorks) до программирования G-кодов и постпроцессирования.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Ключевые партнеры:</strong> КЭАЗ, АО «Электроагрегат», АО «Авиаавтоматика им. Тарасова», АО «Совтест АТЕ».</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Опережающее трудоустройство:</strong> более 92% выпускников получают предложения о работе до защиты диплома.</span>
+            </li>
+          </ul>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn btn-solid" href="https://kemt.ru" target="_blank" rel="noopener">Официальный сайт КЭМТ</a>
+            <button class="btn btn-ghost" onclick="document.getElementById('quiz-section').scrollIntoView({behavior:'smooth'})">Подобрать специальность</button>
+          </div>
+        </article>
+
+        <!-- Partner Colleges Column -->
+        <div class="colleges-list" id="colleges-section">
+          <div style="font-family:var(--mono); font-size:11px; letter-spacing:0.1em; color:var(--text-dim); text-transform:uppercase; margin-bottom:4px;">
+            ПАРТНЕРСКИЕ КОЛЛЕДЖИ РЕГИОНА
+          </div>
+
+          <div class="college-item-card">
+            <h3 class="college-item-name">Курский политехнический колледж</h3>
+            <p class="college-item-specialties">
+              Подготовка специалистов в области релейной защиты, автоматизации электроэнергетических систем, электромонтеров подстанций и теплоэнергетиков.
+            </p>
+          </div>
+
+          <div class="college-item-card">
+            <h3 class="college-item-name">Железногорский горно-металлургический колледж (ЖГМК)</h3>
+            <p class="college-item-specialties">
+              Главная кузница кадров для Михайловского ГОК им. Варичева. Горное дело, открытые горные работы, обслуживание тяжелой карьерной гидравлики и дробилок.
+            </p>
+          </div>
+
+          <div class="college-item-card">
+            <h3 class="college-item-name">Курский монтажный техникум</h3>
+            <p class="college-item-specialties">
+              Специализируется на строительно-монтажных технологиях для Курской АЭС-2: монтаж металлических конструкций, сварочное производство, спецбетоны.
+            </p>
+          </div>
+
+          <div class="college-item-card">
+            <h3 class="college-item-name">Железногорский политехнический колледж</h3>
+            <p class="college-item-specialties">
+              Водители карьерного и технологического транспорта, трактористы-машинисты категории А-III (БелАЗ 130т), автомеханики тяжелых парков.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Federal Project "Профессионалитет" Banner -->
+      <div class="profi-banner" id="profi-section">
+        <div class="profi-content">
+          <div class="profi-kicker">ФЕДЕРАЛЬНЫЙ ПРОЕКТ // ПРОФЕССИОНАЛИТЕТ</div>
+          <h2 class="profi-title">Новая модель подготовки рабочих специалистов в Курской области</h2>
+          <p class="profi-desc">
+            Сокращенный срок обучения (2 года 10 месяцев) без потери качества. Учебные планы согласованы напрямую 
+            с главными инженерами КЭАЗ, Михайловского ГОК и Курской АЭС-2. Студенты проходят оплачиваемую практику 
+            в реальных цехах и получают статус молодых специалистов со стабильным окладом.
+          </p>
+        </div>
+        <div style="flex-shrink:0;">
+          <a class="btn btn-solid btn-lg" href="vacancies.html">
+            <span>Выбрать профессию</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Infrastructure of ЦОПП 46 -->
+      <section class="section" id="copp-section" style="padding: 0 0 64px 0;">
+        <div class="section-header">
+          <div class="section-kicker">ЦОПП Курской области (copp46.ru)</div>
+          <h2 class="section-title">Центр опережающей <em>профессиональной подготовки</em></h2>
+          <p class="section-lead">
+            Единое окно профориентации, ускоренной подготовки и сертификации кадров. Площадка взаимодействия 
+            школ, колледжей, вузов и промышленных гигантов Соловьиного края.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">
+          <div class="cluster-card" style="padding:28px;">
+            <div style="font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--text-dim); margin-bottom:10px;">01 // ДЛЯ ШКОЛЬНИКОВ 6–11 КЛАССОВ</div>
+            <h3 style="font-size:18px; font-weight:550; color:#fff; margin-bottom:10px;">Профориентационные пробы «Билет в будущее»</h3>
+            <p style="font-size:13.5px; line-height:1.55; color:var(--text-muted);">
+              Возможность лично поработать за учебным станком с ЧПУ, выполнить первую аргоновую строчку на тренажере или собрать схему реле до поступления в колледж.
+            </p>
+          </div>
+
+          <div class="cluster-card" style="padding:28px;">
+            <div style="font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--text-dim); margin-bottom:10px;">02 // ДЛЯ СТУДЕНТОВ СПО</div>
+            <h3 style="font-size:18px; font-weight:550; color:#fff; margin-bottom:10px;">Демонстрационный экзамен по стандартам ГОСТ</h3>
+            <p style="font-size:13.5px; line-height:1.55; color:var(--text-muted);">
+              Независимая аттестация практических навыков реальными экспертами предприятий: проверка точности детали до микрометров или сварного шва под ультразвуком.
+            </p>
+          </div>
+
+          <div class="cluster-card" style="padding:28px;">
+            <div style="font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--text-dim); margin-bottom:10px;">03 // ДЛЯ ПРЕДПРИЯТИЙ</div>
+            <h3 style="font-size:18px; font-weight:550; color:#fff; margin-bottom:10px;">Короткие программы переподготовки (72–250 ч)</h3>
+            <p style="font-size:13.5px; line-height:1.55; color:var(--text-muted);">
+              Быстрый вывод специалиста на рабочее место под конкретные станки Fanuc или Siemens по прямому техзаданию курских заводов.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Career Quiz Section -->
+      <section class="section" id="quiz-section" style="padding: 0 0 64px 0;">
+        <div class="section-header">
+          <div class="section-kicker">Интерактивный навигатор карьеры</div>
+          <h2 class="section-title">Тест: определите вашу <em>промышленную траекторию</em></h2>
+          <p class="section-lead">
+            Ответьте на 5 инженерных вопросов. Алгоритм рассчитает индекс совместимости ваших интересов 
+            с востребованными профессиями Курской области, подберет базовый колледж и покажет стартовую зарплату.
+          </p>
+        </div>
+
+        <div class="quiz-container" id="career-quiz">
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+          </div>
+
+          <div class="quiz-content" id="quiz-content">
+            <div class="quiz-step-indicator" id="quiz-step-indicator">ВОПРОС 01 ИЗ 05</div>
+            <h3 class="quiz-question-title" id="quiz-question-title">Какая сфера технической деятельности вас больше всего привлекает?</h3>
+            <div class="quiz-options-list" id="quiz-options-list">
+              <!-- Dynamically populated by js/main.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">ОБПОУ «КЭМТ» // IT-ЦОПП КУРСК</div>
+          <p class="footer-desc">
+            Проект разработан в рамках открытого регионального конкурса «IT-ЦОПП» 
+            для обучающихся общеобразовательных организаций и организаций дополнительного образования Курской области.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div>
+            <div class="footer-col-title">Навигация</div>
+            <ul class="footer-col-links">
+              <li><a href="index.html">Главный Атлас</a></li>
+              <li><a href="vacancies.html">Топ-11 востребованных профессий</a></li>
+              <li><a href="education.html">Колледжи и ЦОПП 46</a></li>
+              <li><a href="education.html#quiz-section">Интерактивный тест карьеры</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Контакты и регламент</div>
+            <ul class="footer-col-links">
+              <li><span>ОБПОУ «КЭМТ»</span></li>
+              <li><span>г. Курск, ул. Радищева, д. 29</span></li>
+              <li><span>Email: <a href="mailto:info@copp46.ru">info@copp46.ru</a></span></li>
+              <li><span>Сайт ЦОПП: copp46.ru</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ОБПОУ «КЭМТ». Приказ № 290 - ОБЩ от 11.09.2026 г. Все права защищены.</div>
+        <div style="font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; color:var(--text-dim);">КУРСК · ЦОПП 46 · ПРОФЕССИОНАЛИТЕТ</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- HUD Scrim Overlay -->
+  <div class="hud-scrim" id="hud-scrim"></div>
+
+  <!-- HUD Modal: Registry of Kursk Industrial Enterprises -->
+  <div class="hud hud-wide" id="hud-library" role="dialog" aria-modal="true" aria-labelledby="hud-lib-title">
+    <button class="hud-close" type="button" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="hud-kicker">Региональная база данных работодателей</div>
+    <h3 class="hud-title" id="hud-lib-title">Реестр ведущих промышленных предприятий Курской области</h3>
+    <p class="hud-desc">
+      Сводная таблица аккредитованных производственных комплексов, промышленных кластеров и строительных холдингов, 
+      ведущих набор выпускников СПО по федеральному проекту «Профессионалитет».
+    </p>
+
+    <div class="table-wrap">
+      <table class="glass-table">
+        <thead>
+          <tr>
+            <th>Предприятие // Город</th>
+            <th>Сектор</th>
+            <th>Вакансий</th>
+            <th>Средняя ставка</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody id="library-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- HUD Modal: Detailed Profession Inspection Sheet -->
+  <div class="hud" id="hud-inspector" role="dialog" aria-modal="true" aria-labelledby="inspector-title">
+    <button class="hud-close" type="button" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="hud-kicker" id="inspector-kicker">ТЕЛЕМЕТРИЯ СПЕЦИАЛЬНОСТИ</div>
+    <h3 class="hud-title" id="inspector-title">Технологическая спецификация</h3>
+    <p class="hud-desc" id="inspector-desc"></p>
+
+    <div class="reader-tabs" role="tablist">
+      <button class="reader-tab is-active" type="button" data-pane="spec" role="tab" aria-selected="true">
+        <span class="tab-index">01</span><span>Спецификация</span>
+      </button>
+      <button class="reader-tab" type="button" data-pane="qual" role="tab" aria-selected="false">
+        <span class="tab-index">02</span><span>Квалификация</span>
+      </button>
+      <button class="reader-tab" type="button" data-pane="career" role="tab" aria-selected="false">
+        <span class="tab-index">03</span><span>Карьерный лифт</span>
+      </button>
+    </div>
+
+    <div class="tab-pane is-active" id="pane-spec">
+      <div id="inspector-spec-content"></div>
+    </div>
+    <div class="tab-pane" id="pane-qual">
+      <div id="inspector-qual-content"></div>
+    </div>
+    <div class="tab-pane" id="pane-career">
+      <div id="inspector-career-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

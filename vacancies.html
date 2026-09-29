@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Топ-11 Востребованных Профессий Курской Области — КЭМТ // IT-ЦОПП</title>
+  <meta name="description" content="Официальный каталог 11 самых востребованных рабочих профессий Курска и Курской области по данным Приложения к заданию хакатона IT-ЦОПП. Зарплаты, требования, допуски.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="bg-ambient" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/images/video-poster.jpg">
+      <source src="assets/video/kursk-industry-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <a class="header-brand" href="index.html" aria-label="На главную">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">КЭМТ <span class="brand-badge">IT-ЦОПП</span></span>
+          <span class="brand-sub">Реестр Профессий Курской Области</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Главная навигация">
+        <a class="nav-pill" href="index.html">01 // Главный Атлас</a>
+        <a class="nav-pill is-active" href="vacancies.html">02 // Топ-11 Профессий</a>
+        <a class="nav-pill" href="education.html">03 // Колледжи и ЦОПП</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost btn-sm" id="btn-open-library" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>Реестр предприятий</span>
+        </button>
+        <a class="btn btn-solid btn-sm" href="education.html#quiz-section">
+          <span>Тест карьеры</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="burger" id="burger-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sticky Sidebar -->
+    <aside class="sticky-sidebar" id="anchor-nav" aria-label="Навигация по разделам">
+      <a class="sidebar-anchor is-active" href="#vacancies-hero" aria-label="Введение">
+        <span class="anchor-tooltip">01 Введение</span>
+      </a>
+      <a class="sidebar-anchor" href="#bento-section" aria-label="Каталог">
+        <span class="anchor-tooltip">02 Bento-каталог</span>
+      </a>
+      <a class="sidebar-anchor" href="#salary-chart" aria-label="Зарплаты">
+        <span class="anchor-tooltip">03 Зарплатные сетки</span>
+      </a>
+      <a class="sidebar-anchor" href="#faq-section" aria-label="Вопрос-ответ">
+        <span class="anchor-tooltip">04 Вопрос-ответ</span>
+      </a>
+    </aside>
+
+    <!-- Page Content -->
+    <section class="section" id="vacancies-hero" style="padding-top: calc(var(--header-h) + 40px); padding-bottom: 24px;">
+      <div class="section-header" style="margin-bottom: 32px;">
+        <div class="badge-pill liquid-glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <span>ПРИЛОЖЕНИЕ К ЗАДАНИЮ ХАКАТОНА · ОФИЦИАЛЬНЫЙ РЕЕСТР</span>
+        </div>
+        <h1 class="section-title">Каталог <em>востребованных рабочих профессий</em></h1>
+        <p class="section-lead">
+          Квалификационный реестр специальностей, критически необходимых индустриальным предприятиям Курской области: 
+          от операторов ЧПУ лабораторий КЭМТ и сварщиков атомных реакторов ВВЭР-ТОИ до водителей 130-тонных карьерных самосвалов.
+        </p>
+      </div>
+
+      <!-- Industry Filter Bar -->
+      <div class="filter-bar" id="filters" role="tablist" aria-label="Фильтры отраслей">
+        <button class="filter-chip is-active" type="button" data-filter="all">Все 11 специальностей</button>
+        <button class="filter-chip" type="button" data-filter="metal">Металлообработка и ЧПУ (3)</button>
+        <button class="filter-chip" type="button" data-filter="power">Энергетика и монтаж (2)</button>
+        <button class="filter-chip" type="button" data-filter="construction">Строительный комплекс (3)</button>
+        <button class="filter-chip" type="button" data-filter="heavy">Тяжелое машиностроение (2)</button>
+        <button class="filter-chip" type="button" data-filter="logistics">Транспорт и карьер (1)</button>
+      </div>
+
+      <!-- Bento Grid (All 11 Professions) -->
+      <div class="bento-grid" id="bento-section">
+
+        <!-- 01: Сварщик -->
+        <article class="bento-card" data-key="welding" data-category="metal">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4l3 3M12 6l5 5M9 9l-5 5a2 2 0 0 0 0 2.8l1.4 1.4a2 2 0 0 0 2.8 0l5-5M17 1l4 4M3 21l3-3M2 18l4 4"/></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">01 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 98%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Сварщик (электрогазосварщик, TIG/MIG)</h2>
+          <p class="bento-desc">
+            Ручная аргонодуговая сварка неплавящимся электродом (TIG) и полуавтомат (MIG) для сосудов под давлением 1-го контура Курской АЭС-2 и узлов МГОК.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">85 000 — 185 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">АЭС-2 · МГОК · Электроагрегат</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 02: Оператор-наладчик станков с ЧПУ -->
+        <article class="bento-card" data-key="cnc-operator" data-category="metal">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="2" width="10" height="5" rx="1"></rect><path d="M9 7v3l-2 3v7h10v-7l-2-3V7"></path><line x1="12" y1="13" x2="12" y2="20"></line><line x1="9" y1="16" x2="15" y2="16"></line></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">02 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 96%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Оператор-наладчик станков с ЧПУ</h2>
+          <p class="bento-desc">
+            Наладка и обработка прецизионных деталей на 3- и 5-осевых станках. Программирование стоек Fanuc, Siemens Sinumerik и Heidenhain с допуском до 0.003 мм.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">90 000 — 175 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">КЭАЗ · КЭМТ Lab · Авиаавтоматика</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 03: Токарь -->
+        <article class="bento-card" data-key="lathe" data-category="metal">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="12" r="5"></circle><circle cx="7" cy="12" r="2"></circle><path d="M12 9h9v6h-9"></path><path d="M2 19h20"></path></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">03 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 92%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Токарь-универсал (4–6 разряд)</h2>
+          <p class="bento-desc">
+            Высокоточная токарная обработка ступенчатых валов, посадочных шеек и нарезание нестандартных упорных резьб на универсальных и карусельных станках.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">75 000 — 150 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">Электроагрегат · КЭАЗ · МГОК</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 04: Слесарь-ремонтник -->
+        <article class="bento-card" data-key="repairman" data-category="heavy">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">04 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 91%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Слесарь-ремонтник оборудования</h2>
+          <p class="bento-desc">
+            Капитальный ремонт, центровка и регулировка тяжелого технологического оборудования, мощных редукторов и дробильно-размольных комплексов МГОК.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">70 000 — 135 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">Михайловский ГОК · Курскхимволокно</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 05: Электромонтер -->
+        <article class="bento-card" data-key="electrician-repair" data-category="power">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">05 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 94%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Электромонтер (до и выше 1000В)</h2>
+          <p class="bento-desc">
+            Обслуживание распределительных подстанций 10/0.4 кВ, силовых трансформаторов, релейной защиты, заводских щитов и микропроцессорной автоматики.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">65 000 — 140 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">Курскэнерго · Курская АЭС · КЭАЗ</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 06: Электромонтажник -->
+        <article class="bento-card" data-key="electrician-install" data-category="power">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="8" r="2.2"></circle><circle cx="8.5" cy="14.5" r="2.2"></circle><circle cx="15.5" cy="14.5" r="2.2"></circle></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">06 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 89%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Электромонтажник силового оборудования</h2>
+          <p class="bento-desc">
+            Монтаж силовых кабель-трасс, распределительных трансформаторных подстанций и расключение шкафов автоматики строящихся энергоблоков Курской АЭС-2.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">75 000 — 160 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">АСЭ (Росатом) · Курскэлектромонтаж</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 07: Арматурщик -->
+        <article class="bento-card" data-key="rebar" data-category="construction">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="6" y1="3" x2="6" y2="21"></line><line x1="18" y1="3" x2="18" y2="21"></line><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">07 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 88%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Арматурщик тяжелых армокаркасов</h2>
+          <p class="bento-desc">
+            Изготовление и пространственная сборка тяжелых арматурных каркасов и напрягаемой арматуры для фундаментных плит и гермооболочек Курской АЭС-2.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">70 000 — 145 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">ТИТАН-2 · Росэнергоатом · КПД</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 08: Бетонщик -->
+        <article class="bento-card" data-key="concrete" data-category="construction">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18"></path><path d="M5 21l3-14h8l3 14"></path><line x1="7" y1="14" x2="17" y2="14"></line></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">08 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 85%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Бетонщик монолитных спецсооружений</h2>
+          <p class="bento-desc">
+            Укладка, вибрирование и уход за самоуплотняющимися тяжелыми гидротехническими и радиационно-стойкими бетонными смесями классов В60–В80.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">65 000 — 130 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">ТИТАН-2 · Завод КПД им. Дериглазова</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 09: Монтажник -->
+        <article class="bento-card" data-key="installer" data-category="construction">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v3H4z"></path><path d="M4 17h16v3H4z"></path><path d="M10 7h4v10h-4z"></path></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">09 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 90%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Монтажник металлоконструкций</h2>
+          <p class="bento-desc">
+            Монтаж стальных каркасов промышленных цехов, эстакад технологических трубопроводов и модулей реакторного зала с затяжкой высокопрочных болтов.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">80 000 — 165 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">Трест Гидромонтаж · Проммонтаж</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 10: Водитель грузового автомобиля -->
+        <article class="bento-card" data-key="truck-driver" data-category="logistics">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 3h15v13H1z"></path><path d="M16 8h4l3 3v5h-7V8z"></path><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">10 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 95%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Водитель грузового автомобиля (БелАЗ 130т)</h2>
+          <p class="bento-desc">
+            Управление карьерными автосамосвалами грузоподъемностью 130–220 тонн в чаше Михайловского железорудного карьера и тяжелыми магистральными автопоездами.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">85 000 — 170 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">Михайловский ГОК (УАТ) · Автодор</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+        <!-- 11: Машинист крана -->
+        <article class="bento-card" data-key="crane-operator" data-category="heavy">
+          <div class="bento-header">
+            <div class="bento-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v6"></path><rect x="9" y="8" width="6" height="4" rx="1"></rect><path d="M12 12c0 3-3 4-3 6a3 3 0 0 0 6 0c0-1.5-1-2.5-2-3"></path></svg>
+            </div>
+            <div style="text-align:right;">
+              <span class="bento-num">11 / 11</span>
+              <div class="bento-demand" style="margin-top:4px;">Спрос: 93%</div>
+            </div>
+          </div>
+          <h2 class="bento-title">Машинист крана (башенные / мостовые)</h2>
+          <p class="bento-desc">
+            Управление башенными сверхтяжелыми кранами высокой грузоподъемности (Liebherr) и мостовыми металлургическими литейными кранами до 160 тонн.
+          </p>
+          <div class="bento-salary">
+            <span class="salary-label">Тарифная сетка</span>
+            <span class="salary-val">90 000 — 180 000 ₽</span>
+          </div>
+          <div class="bento-footer">
+            <span class="bento-employers">АСЭ (АЭС-2) · МГОК · КЭАЗ</span>
+            <span class="bento-action-link">
+              <span>Спецификация</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Salary Analytics & Comparison Table -->
+    <section class="section" id="salary-chart">
+      <div class="section-header">
+        <div class="section-kicker">Экономическая аналитика</div>
+        <h2 class="section-title">Сравнение доходов и <em>квалификаций</em></h2>
+        <p class="section-lead">
+          Данные сформированы на основе реальных тарификационных сеток курских промышленных комплексов 
+          с учетом доплат за квалификационные разряды, ночные смены и допуски Ростехнадзора.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="glass-table">
+          <thead>
+            <tr>
+              <th>Профессия</th>
+              <th>Отрасль</th>
+              <th>Базовая ставка</th>
+              <th>С разрядом / НАКС</th>
+              <th>Индекс спроса</th>
+              <th style="text-align:right;">Действие</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong style="color:#fff;">Сварщик TIG/MIG</strong></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Металлообработка / АЭС</span></td>
+              <td><span style="font-family:var(--mono);">85 000 ₽</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">до 185 000 ₽</span></td>
+              <td><span style="color:#ffffff; font-family:var(--mono);">98% (Максимальный)</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm" onclick="openProfessionInspector('welding')">Открыть техкарту</button></td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Оператор-наладчик станков с ЧПУ</strong></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Приборостроение / Fanuc</span></td>
+              <td><span style="font-family:var(--mono);">90 000 ₽</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">до 175 000 ₽</span></td>
+              <td><span style="color:#ffffff; font-family:var(--mono);">96% (Критический)</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm" onclick="openProfessionInspector('cnc-operator')">Открыть техкарту</button></td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Машинист крана</strong></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Тяжелое машиностроение</span></td>
+              <td><span style="font-family:var(--mono);">90 000 ₽</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">до 180 000 ₽</span></td>
+              <td><span style="color:#ffffff; font-family:var(--mono);">93% (Высокий)</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm" onclick="openProfessionInspector('crane-operator')">Открыть техкарту</button></td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Водитель карьерного самосвала</strong></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Горнорудный карьер (МГОК)</span></td>
+              <td><span style="font-family:var(--mono);">85 000 ₽</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">до 170 000 ₽</span></td>
+              <td><span style="color:#ffffff; font-family:var(--mono);">95% (Критический)</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm" onclick="openProfessionInspector('truck-driver')">Открыть техкарту</button></td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Электромонтажник</strong></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Энергетика / Строительство</span></td>
+              <td><span style="font-family:var(--mono);">75 000 ₽</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">до 160 000 ₽</span></td>
+              <td><span style="color:#ffffff; font-family:var(--mono);">89% (Стабильный)</span></td>
+              <td style="text-align:right;"><button class="btn btn-ghost btn-sm" onclick="openProfessionInspector('electrician-install')">Открыть техкарту</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Industrial FAQ Section -->
+    <section class="section" id="faq-section">
+      <div class="section-header">
+        <div class="section-kicker">Часто задаваемые вопросы</div>
+        <h2 class="section-title">Трудоустройство и <em>квалификация</em></h2>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
+        <div style="padding:24px; background:linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(14,16,20,0.6) 100%); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.1); border-radius:14px;">
+          <h3 style="font-size:16px; font-weight:550; color:#fff; margin-bottom:10px;">Как получить допуск НАКС для работы на Курской АЭС-2?</h3>
+          <p style="font-size:13.5px; line-height:1.58; color:#a1a1aa;">
+            Аттестация Национального Агентства Контроля Сварки проходит в специализированных центрах после сдачи контрольных образцов под радиографический и ультразвуковой контроль. Студенты КЭМТ проходят базовую подготовку уже на старших курсах.
+          </p>
+        </div>
+
+        <div style="padding:24px; background:linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(14,16,20,0.6) 100%); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.1); border-radius:14px;">
+          <h3 style="font-size:16px; font-weight:550; color:#fff; margin-bottom:10px;">Предоставляется ли жилье иногородним специалистам?</h3>
+          <p style="font-size:13.5px; line-height:1.58; color:#a1a1aa;">
+            Ведущие работодатели (Росатом, Металлоинвест) компенсируют аренду жилья в Курчатове и Железногорске, а также предоставляют места в ведомственных общежитиях повышенной комфортности.
+          </p>
+        </div>
+
+        <div style="padding:24px; background:linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(14,16,20,0.6) 100%); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.1); border-radius:14px;">
+          <h3 style="font-size:16px; font-weight:550; color:#fff; margin-bottom:10px;">В чем преимущество проекта «Профессионалитет»?</h3>
+          <p style="font-size:13.5px; line-height:1.58; color:#a1a1aa;">
+            Срок обучения сокращен до 2 лет 10 месяцев за счет интенсивной заводской практики. Студент заключает целевой договор с предприятием, получает корпоративную стипендию и гарантированное рабочее место.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">ОБПОУ «КЭМТ» // IT-ЦОПП КУРСК</div>
+          <p class="footer-desc">
+            Проект разработан в рамках открытого регионального конкурса «IT-ЦОПП» 
+            для обучающихся общеобразовательных организаций и организаций дополнительного образования Курской области.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div>
+            <div class="footer-col-title">Навигация</div>
+            <ul class="footer-col-links">
+              <li><a href="index.html">Главный Атлас</a></li>
+              <li><a href="vacancies.html">Топ-11 востребованных профессий</a></li>
+              <li><a href="education.html">Колледжи и ЦОПП 46</a></li>
+              <li><a href="education.html#quiz-section">Интерактивный тест карьеры</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Контакты и регламент</div>
+            <ul class="footer-col-links">
+              <li><span>ОБПОУ «КЭМТ»</span></li>
+              <li><span>г. Курск, ул. Радищева, д. 29</span></li>
+              <li><span>Email: <a href="mailto:info@copp46.ru">info@copp46.ru</a></span></li>
+              <li><span>Сайт ЦОПП: copp46.ru</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ОБПОУ «КЭМТ». Приказ № 290 - ОБЩ от 11.09.2026 г. Все права защищены.</div>
+        <div style="font-family:var(--mono); color:#a1a1aa;">КУРСК · ЦОПП 46 · ПРОФЕССИОНАЛИТЕТ</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- HUD Scrim Overlay -->
+  <div class="hud-scrim" id="hud-scrim"></div>
+
+  <!-- HUD Modal: Registry of Kursk Industrial Enterprises -->
+  <div class="hud hud-wide" id="hud-library" role="dialog" aria-modal="true" aria-labelledby="hud-lib-title">
+    <button class="hud-close" type="button" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="hud-kicker">Региональная база данных работодателей</div>
+    <h3 class="hud-title" id="hud-lib-title">Реестр ведущих промышленных предприятий Курской области</h3>
+    <p class="hud-desc">
+      Сводная таблица аккредитованных производственных комплексов, промышленных кластеров и строительных холдингов, 
+      ведущих набор выпускников СПО по федеральному проекту «Профессионалитет».
+    </p>
+
+    <div class="table-wrap">
+      <table class="glass-table">
+        <thead>
+          <tr>
+            <th>Предприятие // Город</th>
+            <th>Сектор</th>
+            <th>Вакансий</th>
+            <th>Средняя ставка</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody id="library-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- HUD Modal: Detailed Profession Inspection Sheet -->
+  <div class="hud" id="hud-inspector" role="dialog" aria-modal="true" aria-labelledby="inspector-title">
+    <button class="hud-close" type="button" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="hud-kicker" id="inspector-kicker">ТЕЛЕМЕТРИЯ СПЕЦИАЛЬНОСТИ</div>
+    <h3 class="hud-title" id="inspector-title">Технологическая спецификация</h3>
+    <p class="hud-desc" id="inspector-desc"></p>
+
+    <div class="reader-tabs" role="tablist">
+      <button class="reader-tab is-active" type="button" data-pane="spec" role="tab" aria-selected="true">
+        <span class="tab-index">01</span><span>Спецификация</span>
+      </button>
+      <button class="reader-tab" type="button" data-pane="qual" role="tab" aria-selected="false">
+        <span class="tab-index">02</span><span>Квалификация</span>
+      </button>
+      <button class="reader-tab" type="button" data-pane="career" role="tab" aria-selected="false">
+        <span class="tab-index">03</span><span>Карьерный лифт</span>
+      </button>
+    </div>
+
+    <div class="tab-pane is-active" id="pane-spec">
+      <div id="inspector-spec-content"></div>
+    </div>
+    <div class="tab-pane" id="pane-qual">
+      <div id="inspector-qual-content"></div>
+    </div>
+    <div class="tab-pane" id="pane-career">
+      <div id="inspector-career-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

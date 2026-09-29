@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <circle cx="35" cy="22" r="14" fill="#fed7aa"/>
+  <!-- White Safety Helmet with cyan visor -->
+  <path d="M 20 20 Q 35 6 50 20 L 50 25 L 20 25 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="23" y="18" width="24" height="6" rx="2" fill="#06b6d4" opacity="0.8"/>
+  <circle cx="30" cy="24" r="2" fill="#0f172a"/>
+  <circle cx="40" cy="24" r="2" fill="#0f172a"/>
+  <path d="M 31 30 Q 35 33 39 30" stroke="#0f172a" stroke-width="1.5" fill="none"/>
+  <!-- High-tech white lab suit with blue radiation belt -->
+  <path d="M 18 38 L 52 38 L 54 82 L 16 82 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="16" y="65" width="38" height="6" fill="#0284c7"/>
+  <!-- Sensor handheld unit -->
+  <rect x="6" y="58" width="10" height="16" rx="2" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="11" cy="64" r="2" fill="#22c55e"/>
+  <!-- Legs -->
+  <line x1="26" y1="82" x2="26" y2="102" stroke="#e2e8f0" stroke-width="6"/>
+  <line x1="44" y1="82" x2="44" y2="102" stroke="#e2e8f0" stroke-width="6"/>
+  <ellipse cx="23" cy="104" rx="7" ry="4" fill="#475569"/>
+  <ellipse cx="47" cy="104" rx="7" ry="4" fill="#475569"/>
+</svg>

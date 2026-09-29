@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <circle cx="35" cy="24" r="13" fill="#fbcfe8"/>
+  <!-- Aviator leather helmet & goggles -->
+  <path d="M 21 24 Q 35 10 49 24 L 49 32 L 44 32 L 44 26 Q 35 16 26 26 L 26 32 L 21 32 Z" fill="#78350f"/>
+  <rect x="24" y="14" width="10" height="6" rx="2" fill="#0284c7" stroke="#f59e0b" stroke-width="1"/>
+  <rect x="36" y="14" width="10" height="6" rx="2" fill="#0284c7" stroke="#f59e0b" stroke-width="1"/>
+  <line x1="34" y1="17" x2="36" y2="17" stroke="#78350f" stroke-width="1.5"/>
+  <!-- Brown flight leather coat with sheepskin collar -->
+  <path d="M 18 40 L 52 40 L 54 82 L 16 82 Z" fill="#9a3412" stroke="#451a03" stroke-width="1"/>
+  <!-- Steel tool in hand -->
+  <path d="M 8 55 L 12 75" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <!-- Boots -->
+  <line x1="26" y1="82" x2="26" y2="102" stroke="#1e293b" stroke-width="6"/>
+  <line x1="44" y1="82" x2="44" y2="102" stroke="#1e293b" stroke-width="6"/>
+  <ellipse cx="23" cy="104" rx="7" ry="4" fill="#0f172a"/>
+  <ellipse cx="47" cy="104" rx="7" ry="4" fill="#0f172a"/>
+</svg>

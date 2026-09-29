@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" width="110" height="110">
+  <g transform="translate(55,55)">
+    <path d="M -5 -8 L -3 -50 Q 0 -54 3 -50 L 5 -8 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <path d="M 8 -5 L 50 -3 Q 54 0 50 3 L 8 5 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <path d="M 5 8 L 3 50 Q 0 54 -3 50 L -5 8 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <path d="M -8 5 L -50 3 Q -54 0 -50 -3 L -8 -5 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <!-- Brass Hub with Centered Bolting -->
+    <circle cx="0" cy="0" r="10" fill="#f59e0b" stroke="#78350f" stroke-width="1.8"/>
+    <circle cx="0" cy="0" r="4" fill="#451a03"/>
+  </g>
+</svg>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Индустриальный Атлас Курской Области — ОБПОУ «КЭМТ» // IT-ЦОПП</title>
+  <meta name="description" content="Интерактивный атлас востребованных рабочих профессий Курска и Курской области. Производственные кластеры, станки с ЧПУ, Курская АЭС-2, Михайловский ГОК.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <!-- Analog Film Grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Ambient Industrial Background Video -->
+  <div class="bg-ambient" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/images/video-poster.jpg">
+      <source src="assets/video/kursk-industry-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="page-wrapper">
+    <!-- Liquid Glass Header -->
+    <header class="header">
+      <a class="header-brand" href="index.html" aria-label="На главную">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-meta">
+          <span class="brand-title">КЭМТ <span class="brand-badge">IT-ЦОПП</span></span>
+          <span class="brand-sub">Индустриальный Атлас Курской Земли</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Главная навигация">
+        <a class="nav-pill is-active" href="index.html">01 // Главный Атлас</a>
+        <a class="nav-pill" href="vacancies.html">02 // Топ-11 Профессий</a>
+        <a class="nav-pill" href="education.html">03 // Колледжи и ЦОПП</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost btn-sm" id="btn-open-library" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>Реестр предприятий</span>
+        </button>
+        <a class="btn btn-solid btn-sm" href="education.html#quiz-section">
+          <span>Тест карьеры</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="burger" id="burger-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Sticky Hardware Anchor Sidebar -->
+    <aside class="sticky-sidebar" id="anchor-nav" aria-label="Навигация по разделам">
+      <a class="sidebar-anchor is-active" href="#hero" aria-label="В начало">
+        <span class="anchor-tooltip">01 Введение</span>
+      </a>
+      <a class="sidebar-anchor" href="#stats-ribbon" aria-label="Телеметрия">
+        <span class="anchor-tooltip">02 Спрос и показатели</span>
+      </a>
+      <a class="sidebar-anchor" href="#clusters" aria-label="Кластеры">
+        <span class="anchor-tooltip">03 Промышленные кластеры</span>
+      </a>
+      <a class="sidebar-anchor" href="#enterprises-preview" aria-label="Предприятия">
+        <span class="anchor-tooltip">04 Предприятия региона</span>
+      </a>
+    </aside>
+
+    <!-- Main Hero Section -->
+    <main class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="badge-pill liquid-glass">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span>ОБПОУ «КЭМТ» · РЕГИОНАЛЬНЫЙ ХАКАТОН IT-ЦОПП 2026</span>
+        </div>
+
+        <h1 class="hero-title">
+          Энергия <em>созидания и металла</em><br>
+          в сердце Курской земли
+        </h1>
+
+        <p class="hero-desc">
+          Инженерный атлас ключевых производственных специальностей Соловьиного края. 
+          От реакторных отделений Курской АЭС-2 ВВЭР-ТОИ и карьера Михайловского ГОК им. Варичева 
+          до прецизионных 5-осевых станков ЧПУ в лабораториях КЭМТ.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-solid btn-lg" href="vacancies.html">
+            <span>Каталог 11 профессий</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button class="btn btn-ghost btn-lg" id="btn-hero-library" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"></path><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+            <span>База предприятий</span>
+          </button>
+        </div>
+
+        <div class="hero-quick-stats">
+          <div class="quick-stat-item">
+            <span class="quick-stat-val">98.4%</span>
+            <span class="quick-stat-lbl">Индекс кадровой востребованности</span>
+          </div>
+          <div class="quick-stat-item">
+            <span class="quick-stat-val">14 200+</span>
+            <span class="quick-stat-lbl">Открытых вакансий в регионе</span>
+          </div>
+          <div class="quick-stat-item">
+            <span class="quick-stat-val">185 000 ₽</span>
+            <span class="quick-stat-lbl">Максимальная ставка мастера</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature Hardware Loupe Inspector -->
+      <div class="loupe-wrapper" id="loupe-col">
+        <div class="loupe" id="loupe">
+          <div class="loupe-rim" aria-hidden="true"></div>
+          <div class="loupe-prism" aria-hidden="true"></div>
+          <div class="loupe-glare" id="loupe-glare" aria-hidden="true"></div>
+
+          <div class="loupe-stage" id="loupe-stage" role="region" aria-label="Оптический инспектор чертежа и готовой детали">
+            <div class="loupe-layer layer-raw" id="layer-raw"></div>
+            <div class="loupe-layer layer-clean" id="layer-clean"></div>
+
+            <div class="scan-beam" id="scan-beam"></div>
+            <div class="scan-beam-v" id="scan-beam-v"></div>
+
+            <div class="splitter" id="splitter">
+              <span class="handle" aria-label="Ползунок сравнения"></span>
+            </div>
+          </div>
+
+          <div class="loupe-optic-pill">
+            <span class="optic-dot"></span>
+            <span>SPECTRAL MICRON SCAN · КЭМТ LAB</span>
+          </div>
+
+          <div class="loupe-ticks" aria-hidden="true">
+            <span class="tick tick-tl"></span>
+            <span class="tick tick-tr"></span>
+            <span class="tick tick-bl"></span>
+            <span class="tick tick-br"></span>
+            <span class="frame-id">FRAME 01 / 11 · ЧПУ 5X</span>
+          </div>
+
+          <div class="loupe-meta">
+            <span class="chip" id="chip-split">[ СРЕЗ: CAD 46% // CNC 54% ]</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Regional Telemetry Stats Ribbon -->
+    <section class="stats-ribbon" id="stats-ribbon">
+      <div class="stats-grid">
+        <div class="stats-card">
+          <div class="stats-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <div class="stats-content">
+            <div class="stats-number">2 510 <span class="stats-unit">МВт</span></div>
+            <div class="stats-label">Суммарная мощность строящихся блоков Курской АЭС-2 ВВЭР-ТОИ</div>
+          </div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="stats-content">
+            <div class="stats-number">1-е <span class="stats-unit">место в РФ</span></div>
+            <div class="stats-label">Курская магнитная аномалия — крупнейший в мире железорудный бассейн</div>
+          </div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <div class="stats-content">
+            <div class="stats-number">100% <span class="stats-unit">ЧПУ</span></div>
+            <div class="stats-label">Переоснащение станочного парка промышленных гигантов региона</div>
+          </div>
+        </div>
+
+        <div class="stats-card">
+          <div class="stats-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <div class="stats-content">
+            <div class="stats-number">92 <span class="stats-unit">%</span></div>
+            <div class="stats-label">Трудоустройство выпускников СПО в первый год по «Профессионалитету»</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industrial Clusters Section -->
+    <section class="section" id="clusters">
+      <div class="section-header">
+        <div class="section-kicker">Индустриальная география региона</div>
+        <h2 class="section-title">Индустриальные кластеры <em>Курской земли</em></h2>
+        <p class="section-lead">
+          Курская область — стратегический локомотив Центрального федерального округа. 
+          Здесь переплетаются ядерная физика, горная добыча колоссальных масштабов и передовое приборостроение.
+        </p>
+      </div>
+
+      <div class="clusters-grid">
+        <!-- Cluster 1: Nuclear Energy -->
+        <article class="cluster-card">
+          <div class="cluster-media">
+            <img src="assets/images/clusters/kursk-npp.jpg" alt="Курская АЭС-2 ВВЭР-ТОИ" loading="lazy">
+            <span class="cluster-badge">Энергетический кластер · Курчатов</span>
+          </div>
+          <div class="cluster-body">
+            <h3 class="cluster-title">Курская АЭС и строящаяся АЭС-2 (ВВЭР-ТОИ)</h3>
+            <p class="cluster-desc">
+              Флагман атомной энергетики России. Строительство новейших энергоблоков поколения «3+» 
+              с реакторами ВВЭР-ТОИ мощностью 1255 МВт каждый. Высочайшие требования к качеству сварных 
+              швов 1-го контура под ультразвуковой и радиационный контроль.
+            </p>
+            <div class="cluster-tags">
+              <span class="cluster-tag">TIG / MIG сварка</span>
+              <span class="cluster-tag">Монтаж реакторов</span>
+              <span class="cluster-tag">Бетон В60</span>
+              <span class="cluster-tag">Электромонтаж</span>
+            </div>
+            <div class="cluster-footer">
+              <div class="cluster-meta-info">
+                <span>Вакансий: <strong>680+</strong></span>
+                <span>З/п до: <strong>185 000 ₽</strong></span>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="vacancies.html?sector=power">Смотреть профессии</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cluster 2: Mining & Metallurgy -->
+        <article class="cluster-card">
+          <div class="cluster-media">
+            <img src="assets/images/clusters/mgok-quarry.jpg" alt="Михайловский ГОК им. Варичева" loading="lazy">
+            <span class="cluster-badge">Горнорудный кластер · Железногорск</span>
+          </div>
+          <div class="cluster-body">
+            <h3 class="cluster-title">Михайловский ГОК им. А.В. Варичева (Металлоинвест)</h3>
+            <p class="cluster-desc">
+              Разработка богатейшего месторождения Курской магнитной аномалии. Глубина карьера превышает 380 метров. 
+              Гигантские экскаваторы ЭКГ, карьерные самосвалы БелАЗ грузоподъемностью 130–220 тонн, 
+              обогатительные фабрики и производство железорудных окатышей.
+            </p>
+            <div class="cluster-tags">
+              <span class="cluster-tag">БелАЗ 130т</span>
+              <span class="cluster-tag">Ремонт горной техники</span>
+              <span class="cluster-tag">Тяжелые краны</span>
+              <span class="cluster-tag">Гидравлика высокого давления</span>
+            </div>
+            <div class="cluster-footer">
+              <div class="cluster-meta-info">
+                <span>Вакансий: <strong>420+</strong></span>
+                <span>З/п до: <strong>170 000 ₽</strong></span>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="vacancies.html?sector=heavy">Смотреть профессии</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cluster 3: Electrical Equipment & Engineering -->
+        <article class="cluster-card">
+          <div class="cluster-media">
+            <img src="assets/images/clusters/keaz-electrical.jpg" alt="КЭАЗ и электротехника Курска" loading="lazy">
+            <span class="cluster-badge">Электротехнический кластер · Курск</span>
+          </div>
+          <div class="cluster-body">
+            <h3 class="cluster-title">КЭАЗ, АО «Электроагрегат» и приборостроение</h3>
+            <p class="cluster-desc">
+              Курский электроаппаратный завод — флагман отечественного аппаратостроения (серии OptiMat, OptiDin), 
+              обеспечивающий технологический суверенитет страны. Завод «Электроагрегат» — лидер автономных систем питания. 
+              Сотни современных рабочих мест для наладчиков, токарей и электромонтеров.
+            </p>
+            <div class="cluster-tags">
+              <span class="cluster-tag">КЭАЗ OptiMat</span>
+              <span class="cluster-tag">Токарная обработка</span>
+              <span class="cluster-tag">Электромонтер 1000В</span>
+              <span class="cluster-tag">Штамповка</span>
+            </div>
+            <div class="cluster-footer">
+              <div class="cluster-meta-info">
+                <span>Вакансий: <strong>335+</strong></span>
+                <span>З/п до: <strong>140 000 ₽</strong></span>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="vacancies.html?sector=metal">Смотреть профессии</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cluster 4: High-Tech CNC & KEMT Labs -->
+        <article class="cluster-card">
+          <div class="cluster-media">
+            <img src="assets/images/clusters/kemt-machining.jpg" alt="Мастерские ЧПУ ОБПОУ КЭМТ" loading="lazy">
+            <span class="cluster-badge">Научно-образовательный кластер · ОБПОУ КЭМТ</span>
+          </div>
+          <div class="cluster-body">
+            <h3 class="cluster-title">Мастерские ЧПУ КЭМТ и ЦОПП Курской области</h3>
+            <p class="cluster-desc">
+              Высокотехнологичный полигон подготовки операторов станков с ЧПУ и специалистов мехатроники. 
+              Стойки Fanuc, 5-осевые фрезерные станки, прецизионный мерительный инструмент с ценой деления 
+              до 0.001 мм. Сквозная связка: СПО → заводская практика → трудоустройство.
+            </p>
+            <div class="cluster-tags">
+              <span class="cluster-tag">Fanuc 5-Axis</span>
+              <span class="cluster-tag">Наладка ЧПУ</span>
+              <span class="cluster-tag">Программы ЦОПП</span>
+              <span class="cluster-tag">Профессионалитет</span>
+            </div>
+            <div class="cluster-footer">
+              <div class="cluster-meta-info">
+                <span>Студентов: <strong>1 850+</strong></span>
+                <span>Партнеров: <strong>48 заводов</strong></span>
+              </div>
+              <a class="btn btn-ghost btn-sm" href="education.html">Карьерный трек</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Preview Registry of Enterprises -->
+    <section class="section" id="enterprises-preview">
+      <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px;">
+        <div>
+          <div class="section-kicker">Реестр работодателей региона</div>
+          <h2 class="section-title">Ключевые предприятия <em>и работодатели региона</em></h2>
+        </div>
+        <button class="btn btn-solid" id="btn-open-library-preview" type="button" onclick="document.getElementById('btn-open-library').click()">
+          <span>Открыть полный реестр заводов</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="glass-table">
+          <thead>
+            <tr>
+              <th>Предприятие // Локация</th>
+              <th>Отрасль</th>
+              <th>Открытых вакансий</th>
+              <th>Средняя зарплата</th>
+              <th>Статус аккредитации</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong style="color:#fff;">Курская АЭС-2 (ВВЭР-ТОИ)</strong><br><span style="font-size:11px; color:#71717a;">г. Курчатов</span></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Атомная энергетика</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">680</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff;">135 000 ₽</span></td>
+              <td><span class="status-indicator"><span class="status-dot"></span> Стратегический объект</span></td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Михайловский ГОК им. А.В. Варичева</strong><br><span style="font-size:11px; color:#71717a;">г. Железногорск</span></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Горнорудная отрасль</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">420</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff;">118 000 ₽</span></td>
+              <td><span class="status-indicator"><span class="status-dot"></span> Холдинг Металлоинвест</span></td>
+            </tr>
+            <tr>
+              <td><strong style="color:#fff;">Курский электроаппаратный завод (КЭАЗ)</strong><br><span style="font-size:11px; color:#71717a;">г. Курск</span></td>
+              <td><span style="font-family:var(--mono); color:#a1a1aa;">Электротехника</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff; font-weight:600;">195</span></td>
+              <td><span style="font-family:var(--mono); color:#ffffff;">94 000 ₽</span></td>
+              <td><span class="status-indicator"><span class="status-dot"></span> Лидер импортозамещения</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="footer-logo-title">ОБПОУ «КЭМТ» // IT-ЦОПП КУРСК</div>
+          <p class="footer-desc">
+            Проект разработан в рамках открытого регионального конкурса «IT-ЦОПП» 
+            для обучающихся общеобразовательных организаций и организаций дополнительного образования Курской области.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div>
+            <div class="footer-col-title">Навигация</div>
+            <ul class="footer-col-links">
+              <li><a href="index.html">Главный Атлас</a></li>
+              <li><a href="vacancies.html">Топ-11 востребованных профессий</a></li>
+              <li><a href="education.html">Колледжи и ЦОПП 46</a></li>
+              <li><a href="education.html#quiz-section">Интерактивный тест карьеры</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Контакты и регламент</div>
+            <ul class="footer-col-links">
+              <li><span>ОБПОУ «КЭМТ»</span></li>
+              <li><span>г. Курск, ул. Радищева, д. 29</span></li>
+              <li><span>Email: <a href="mailto:info@copp46.ru">info@copp46.ru</a></span></li>
+              <li><span>Сайт ЦОПП: copp46.ru</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ОБПОУ «КЭМТ». Приказ № 290 - ОБЩ от 11.09.2026 г. Все права защищены.</div>
+        <div style="font-family:var(--mono); color:#a1a1aa;">КУРСК · ЦОПП 46 · ПРОФЕССИОНАЛИТЕТ</div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- HUD Scrim Overlay -->
+  <div class="hud-scrim" id="hud-scrim"></div>
+
+  <!-- HUD Modal: Registry of Kursk Industrial Enterprises -->
+  <div class="hud hud-wide" id="hud-library" role="dialog" aria-modal="true" aria-labelledby="hud-lib-title">
+    <button class="hud-close" type="button" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="hud-kicker">Региональная база данных работодателей</div>
+    <h3 class="hud-title" id="hud-lib-title">Реестр ведущих промышленных предприятий Курской области</h3>
+    <p class="hud-desc">
+      Сводная таблица аккредитованных производственных комплексов, промышленных кластеров и строительных холдингов, 
+      ведущих набор выпускников СПО по федеральному проекту «Профессионалитет».
+    </p>
+
+    <div class="table-wrap">
+      <table class="glass-table">
+        <thead>
+          <tr>
+            <th>Предприятие // Город</th>
+            <th>Сектор</th>
+            <th>Вакансий</th>
+            <th>Средняя ставка</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody id="library-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- HUD Modal: Detailed Profession Inspection Sheet -->
+  <div class="hud" id="hud-inspector" role="dialog" aria-modal="true" aria-labelledby="inspector-title">
+    <button class="hud-close" type="button" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="hud-kicker" id="inspector-kicker">ТЕЛЕМЕТРИЯ СПЕЦИАЛЬНОСТИ</div>
+    <h3 class="hud-title" id="inspector-title">Технологическая спецификация</h3>
+    <p class="hud-desc" id="inspector-desc"></p>
+
+    <div class="reader-tabs" role="tablist">
+      <button class="reader-tab is-active" type="button" data-pane="spec" role="tab" aria-selected="true">
+        <span class="tab-index">01</span><span>Спецификация</span>
+      </button>
+      <button class="reader-tab" type="button" data-pane="qual" role="tab" aria-selected="false">
+        <span class="tab-index">02</span><span>Квалификация</span>
+      </button>
+      <button class="reader-tab" type="button" data-pane="career" role="tab" aria-selected="false">
+        <span class="tab-index">03</span><span>Карьерный лифт</span>
+      </button>
+    </div>
+
+    <div class="tab-pane is-active" id="pane-spec">
+      <div id="inspector-spec-content"></div>
+    </div>
+    <div class="tab-pane" id="pane-qual">
+      <div id="inspector-qual-content"></div>
+    </div>
+    <div class="tab-pane" id="pane-career">
+      <div id="inspector-career-content"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

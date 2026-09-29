@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 45" width="70" height="45">
+  <!-- Ore crystal clump -->
+  <polygon points="10,35 25,12 45,8 62,25 55,42 18,40" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <polygon points="25,12 45,8 38,28 20,25" fill="#475569"/>
+  <polygon points="45,8 62,25 48,35 38,28" fill="#1e293b"/>
+  <!-- Glowing magnetic sparkles -->
+  <circle cx="32" cy="18" r="2.5" fill="#38bdf8"/>
+  <circle cx="48" cy="22" r="2" fill="#38bdf8"/>
+  <circle cx="22" cy="32" r="2" fill="#38bdf8"/>
+  <!-- Magnetic pulse ring -->
+  <ellipse cx="36" cy="24" rx="28" ry="16" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 3"/>
+</svg>

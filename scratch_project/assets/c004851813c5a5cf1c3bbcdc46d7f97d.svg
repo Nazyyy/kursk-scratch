@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" width="90" height="90">
+  <circle cx="45" cy="45" r="42" fill="#0f172a" stroke="#475569" stroke-width="2.5"/>
+  <circle cx="45" cy="45" r="36" fill="#1e293b"/>
+  <circle cx="45" cy="45" r="26" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6 4"/>
+  <circle cx="45" cy="45" r="7" fill="#38bdf8"/>
+  <path d="M 20 70 A 32 32 0 1 1 70 70" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="3 3"/>
+  <text x="45" y="65" font-family="monospace" font-size="6" font-weight="bold" fill="#38bdf8" text-anchor="middle">МАХОВИК ВАКУУМ</text>
+  <text x="45" y="74" font-family="monospace" font-size="6" fill="#22c55e" text-anchor="middle">100% ЭНЕРГИЯ</text>
+</svg>

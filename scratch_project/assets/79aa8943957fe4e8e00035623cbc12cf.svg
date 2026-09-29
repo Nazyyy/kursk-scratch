@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 26" width="460" height="26">
+  <rect x="1" y="1" width="458" height="24" rx="4" fill="#0f172a" fill-opacity="0.9" stroke="#0ea5e9" stroke-width="1"/>
+  <!-- Left badge -->
+  <rect x="5" y="4" width="75" height="18" rx="2" fill="#0369a1"/>
+  <text x="42" y="16" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#ffffff" text-anchor="middle">МИССИЯ</text>
+  <!-- Decorative indicator -->
+  <circle cx="445" cy="13" r="5" fill="#22c55e"/>
+</svg>

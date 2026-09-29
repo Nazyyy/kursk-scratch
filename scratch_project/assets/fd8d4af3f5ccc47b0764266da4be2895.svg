@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 110" width="70" height="110">
+  <circle cx="35" cy="22" r="13" fill="#fbcfe8"/>
+  <!-- Safety Helmet with optical HUD visor -->
+  <path d="M 21 20 Q 35 8 49 20 L 49 24 L 21 24 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="24" y="18" width="22" height="5" rx="1.5" fill="#06b6d4" opacity="0.9"/>
+  <!-- Technical lab cleanroom suit -->
+  <path d="M 18 38 L 52 38 L 54 82 L 16 82 Z" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+  <rect x="16" y="65" width="38" height="5" fill="#0284c7"/>
+  <!-- Sensor tablet -->
+  <rect x="6" y="58" width="10" height="15" rx="1.5" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <circle cx="11" cy="65" r="1.5" fill="#22c55e"/>
+  <!-- Boots -->
+  <line x1="26" y1="82" x2="26" y2="102" stroke="#e2e8f0" stroke-width="6"/>
+  <line x1="44" y1="82" x2="44" y2="102" stroke="#e2e8f0" stroke-width="6"/>
+  <ellipse cx="23" cy="104" rx="7" ry="4" fill="#334155"/>
+  <ellipse cx="47" cy="104" rx="7" ry="4" fill="#334155"/>
+</svg>

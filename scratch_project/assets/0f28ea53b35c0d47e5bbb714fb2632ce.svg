@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <circle cx="40" cy="24" r="14" fill="#fed7aa"/>
+  <path d="M 26 24 Q 40 8 54 24 Q 48 14 40 14 Q 32 14 26 24 Z" fill="#1e293b"/>
+  <!-- Mustache -->
+  <path d="M 33 29 Q 40 33 47 29 Q 43 31 40 31 Q 37 31 33 29 Z" fill="#1e293b"/>
+  <circle cx="34" cy="22" r="1.8" fill="#0f172a"/>
+  <circle cx="46" cy="22" r="1.8" fill="#0f172a"/>
+  <!-- Work waistcoat, white shirt & red tie -->
+  <path d="M 22 40 L 58 40 L 62 92 L 18 92 Z" fill="#334155" stroke="#1e293b" stroke-width="1"/>
+  <polygon points="34,40 40,50 46,40" fill="#f8fafc"/>
+  <polygon points="39,44 41,44 42,56 38,56" fill="#dc2626"/>
+  <!-- Blueprint roll of the 1931 Wind Turbine -->
+  <rect x="8" y="55" width="10" height="30" rx="2" fill="#bae6fd" stroke="#0284c7" stroke-width="0.8" transform="rotate(-15 13 70)"/>
+  <!-- Steel vernier caliper in hand -->
+  <path d="M 62,55 L 72,75" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="30" y1="92" x2="30" y2="114" stroke="#1e293b" stroke-width="7"/>
+  <line x1="50" y1="92" x2="50" y2="114" stroke="#1e293b" stroke-width="7"/>
+  <ellipse cx="27" cy="115" rx="8" ry="4" fill="#0f172a"/>
+  <ellipse cx="53" cy="115" rx="8" ry="4" fill="#0f172a"/>
+</svg>

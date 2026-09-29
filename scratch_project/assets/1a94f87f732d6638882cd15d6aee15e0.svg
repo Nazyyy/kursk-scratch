@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" width="110" height="110">
+  <g transform="translate(55,55)">
+    <!-- 4 aerodynamic curved blades -->
+    <path d="M -6 -10 L -4 -50 Q 0 -54 4 -50 L 6 -10 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <path d="M 10 -6 L 50 -4 Q 54 0 50 4 L 10 6 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <path d="M 6 10 L 4 50 Q 0 54 -4 50 L -6 10 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <path d="M -10 6 L -50 4 Q -54 0 -50 -4 L -10 -6 Z" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    
+    <!-- Central brass hub & bolts -->
+    <circle cx="0" cy="0" r="12" fill="#f59e0b" stroke="#78350f" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="#451a03"/>
+    <circle cx="0" cy="-8" r="1.5" fill="#fef08a"/>
+    <circle cx="8" cy="0" r="1.5" fill="#fef08a"/>
+    <circle cx="0" cy="8" r="1.5" fill="#fef08a"/>
+    <circle cx="-8" cy="0" r="1.5" fill="#fef08a"/>
+  </g>
+</svg>

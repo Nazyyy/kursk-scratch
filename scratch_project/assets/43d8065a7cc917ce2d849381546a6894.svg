@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 34" width="130" height="34">
+  <rect x="1" y="1" width="128" height="32" rx="6" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <line x1="2" y1="2" x2="128" y2="2" stroke="#ffffff" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="65.0" y="21.0" font-family="sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">⚠ ТОРМОЗ РОТОРА</text>
+</svg>
